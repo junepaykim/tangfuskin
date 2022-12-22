@@ -1,0 +1,17 @@
+﻿<panel>
+
+
+  <container>
+	<layout class="arrange_horizontal_attachment" layout="-1" gap="0" offset="0"/>
+	<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true"/>
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+
+
+    <!-- team name -->
+    <widget class="text" id="mitn"  size="11" colour="white" fonts="title" alignment="centre_x,centre_y" multiline="ture"/>
+
+    <!--scores-->
+
+  </container>
+
+</panel>

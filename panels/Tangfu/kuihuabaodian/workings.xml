@@ -1,0 +1,343 @@
+<!DOCTYPE panel SYSTEM "http://www.sigames.com/dtds/sios/panel.dtd">
+
+<panel title="workings" >
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>  
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="60,150,30,150"/>
+
+
+	<widget class="button" text="" appearance="button/hide_options/button">
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+
+		<event id="click_event" event_id="kev8"/>
+
+		<attachment class="event_relay_attachment" event_id="kev8">
+			<record id="action_event">
+				<flags id="event_id" value="hide"/>
+				<flags id="event_target" value="khbd"/>
+			</record>
+		</attachment>
+
+	</widget>  
+
+
+
+	
+	<container class="plain_box" appearance="tangfu/popup" red_replacement="black" >
+		<layout class="arrange_vertical_attachment" layout="30,15,-1" offset="0" gap="1"/>
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+		<widget class="text" auto_size="vertical"  value="葵花宝典" alignment="centre" colour="white" size="18"/> 
+		<widget class="text" auto_size="vertical"  value="排名不分先后" alignment="centre" colour="faded text" size="10"/> 
+	
+	<container>
+			<layout class="arrange_horizontal_attachment" layout="-1,260,260,260,260,-1" offset="0" gap="1"/>
+			<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true"/>
+		<container/>
+		<!--头像-->
+		<container>
+
+			<layout class="arrange_vertical_attachment" alignment="top" layout="165,3,165,-1" offset="0" gap="1"/>
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+	
+
+			
+			
+			<container class="inner_subtle_box" appearance="boxes/inner/subtle/paper1" red_replacement="tip5" height="165">
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+			<container>
+				<attachment_group class="vertical_arrange_autosize" vertical_alignment="top,extend" vertical_offset="0" horizontal_inset="0" />	
+			
+						<container class="inner_subtle_box" appearance="boxes/inner/subtle/paper1" height="25" red_replacement="tip5">
+							 <layout class="stick_to_sides_attachment" apply_to_children="true"/>
+						 
+							<widget class="text" auto_size="vertical"  value="头像" alignment="centre" colour="white" size="10"/> 
+						</container>
+					
+					
+							<widget class="text" auto_size="vertical"  value="手绘灵魂头像系列"  alignment="centre" colour="white" size="11"/>
+							<widget class="text" auto_size="vertical"  value="作者：kyokusei"  alignment="centre" colour="white" size="9"/>
+				
+				
+				<widget class="picture" height="100"  scale_picture="true" keep_aspect_ratio="true" file="tangfu/kuihuabaodian/chahua" image_alignment="centre"/>
+			</container>
+			<widget class="button" id="YFM2" appearance="buttons/custom/over state only/button">
+				<record id="click_event" event_id="OURL" url="https://www.playgm.cn/thread-929870-1-1.html" />
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+			</widget>
+		</container>
+		
+	<container/>	
+		
+		<container class="inner_subtle_box" appearance="boxes/inner/subtle/paper1" red_replacement="tip5" height="165">
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+			<container>
+				<attachment_group class="vertical_arrange_autosize" vertical_alignment="top,extend" vertical_offset="0" horizontal_inset="0" />	
+					
+					<container class="inner_subtle_box" appearance="boxes/inner/subtle/paper1" height="25" red_replacement="tip5">
+							 <layout class="stick_to_sides_attachment" apply_to_children="true"/>
+						 
+							<widget class="text" auto_size="vertical"  value="头像" alignment="centre" colour="white" size="10"/> 
+						</container>
+
+				
+					<widget class="text" auto_size="vertical"  value="MG头像系列" alignment="centre" colour="white" size="11"/>
+					<widget class="text" auto_size="vertical"  value="作者：择一队终老" alignment="centre" colour="white" size="9"/>
+				<widget class="picture" height="100"  scale_picture="true" keep_aspect_ratio="true" file="tangfu/kuihuabaodian/MG" image_alignment="centre"/>
+			</container>
+			<widget class="button" id="YFM2" appearance="buttons/custom/over state only/button">
+				<record id="click_event" event_id="OURL" url="https://www.playgm.cn/thread-940978-1-1.html" />
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+			</widget>
+		</container>
+		
+		
+	
+	<container/>
+	</container>
+
+		<!--补丁-->
+		<container>
+
+			<layout class="arrange_vertical_attachment" alignment="top" layout="165,3,165,165,-1" offset="0" gap="1"/>
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+			
+			<container class="inner_subtle_box" appearance="boxes/inner/subtle/paper1" red_replacement="tip3" height="165">
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+			<container>
+				<attachment_group class="vertical_arrange_autosize" vertical_alignment="top,extend" vertical_offset="0" horizontal_inset="0" />	
+					<container class="inner_subtle_box" appearance="boxes/inner/subtle/paper1" height="25" red_replacement="tip3">
+							 <layout class="stick_to_sides_attachment" apply_to_children="true"/>
+						 
+							<widget class="text" auto_size="vertical"  value="补丁" alignment="centre" colour="white" size="10"/> 
+						</container>
+
+				
+					<widget class="text" auto_size="vertical"  value="青训、伤病降低补丁/曼联尤文名字修正" alignment="centre" colour="white" size="11"/>
+					<widget class="text" auto_size="vertical"  value="作者：bossmac001" alignment="centre" colour="white" size="9"/>
+				<widget class="picture" height="100"  scale_picture="true" keep_aspect_ratio="true" file="tangfu/kuihuabaodian/qingxun" image_alignment="centre"/>
+			</container>
+			<widget class="button" id="YFM2" appearance="buttons/custom/over state only/button">
+				<record id="click_event" event_id="OURL" url="https://www.playgm.cn/thread-941174-1-1.html" />
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+			</widget>
+		</container>
+		
+			<container/>
+
+		<container class="inner_subtle_box" appearance="boxes/inner/subtle/paper1" red_replacement="tip3" height="165">
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+			<container>
+				<attachment_group class="vertical_arrange_autosize" vertical_alignment="top,extend" vertical_offset="0" horizontal_inset="0" />	
+
+					<container class="inner_subtle_box" appearance="boxes/inner/subtle/paper1" height="25" red_replacement="tip3">
+							 <layout class="stick_to_sides_attachment" apply_to_children="true"/>
+						 
+							<widget class="text" auto_size="vertical"  value="补丁" alignment="centre" colour="white" size="10"/> 
+						</container>
+				
+					<widget class="text" auto_size="vertical"  value="中国7级联赛补丁" alignment="centre" colour="white" size="11"/>
+					<widget class="text" auto_size="vertical"  value="作者：shil0088" alignment="centre" colour="white" size="9"/>
+				<widget class="picture" height="100"  scale_picture="true" keep_aspect_ratio="true" file="tangfu/kuihuabaodian/zhongchao" image_alignment="centre"/>
+			</container>
+			<widget class="button" id="YFM2" appearance="buttons/custom/over state only/button">
+				<record id="click_event" event_id="OURL" url="https://www.playgm.cn/thread-941496-1-1.html" />
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+			</widget>
+		</container>
+
+		
+		<container class="inner_subtle_box" appearance="boxes/inner/subtle/paper1" red_replacement="tip3" height="165">
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+			<container>
+				<attachment_group class="vertical_arrange_autosize" vertical_alignment="top,extend" vertical_offset="0" horizontal_inset="0" />	
+
+				<container class="inner_subtle_box" appearance="boxes/inner/subtle/paper1" height="25" red_replacement="tip3">
+							 <layout class="stick_to_sides_attachment" apply_to_children="true"/>
+						 
+							<widget class="text" auto_size="vertical"  value="补丁" alignment="centre" colour="white" size="10"/> 
+						</container>
+				
+					<widget class="text" auto_size="vertical"  value="女职员补丁" alignment="centre" colour="white" size="11"/>
+					<widget class="text" auto_size="vertical"  value="作者：bossmac001" alignment="centre" colour="white" size="9"/>
+				<widget class="picture" height="100"  scale_picture="true" keep_aspect_ratio="true" file="tangfu/kuihuabaodian/nvzhiyuan" image_alignment="centre"/>
+			</container>
+			<widget class="button" id="YFM2" appearance="buttons/custom/over state only/button">
+				<record id="click_event" event_id="OURL" url="https://www.playgm.cn/thread-941500-1-1.html" />
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+			</widget>
+		</container>
+	
+	<container/>
+	
+		
+
+		
+		
+		</container>
+		
+		<!--战术-->
+		<container>
+
+			<layout class="arrange_vertical_attachment" alignment="top" layout="165,3,165,3,165,3,165,-1" offset="0" gap="1"/>
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+				
+		<container class="inner_subtle_box" appearance="boxes/inner/subtle/paper1" red_replacement="tip1" height="165">
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+			<container>
+				<attachment_group class="vertical_arrange_autosize" vertical_alignment="top,extend" vertical_offset="0" horizontal_inset="0" />	
+					<container class="inner_subtle_box" appearance="boxes/inner/subtle/paper1" height="25" red_replacement="tip1">
+							 <layout class="stick_to_sides_attachment" apply_to_children="true"/>
+						 
+							<widget class="text" auto_size="vertical"  value="战术" alignment="centre" colour="white" size="10"/> 
+						</container>
+				
+					<widget class="text" auto_size="vertical"  value="毒王懒人战术" alignment="centre" colour="white" size="11"/>
+					<widget class="text" auto_size="vertical"  value="作者：毒王" alignment="centre" colour="white" size="9"/>
+				<widget class="picture" height="100"  scale_picture="true" keep_aspect_ratio="true" file="tangfu/kuihuabaodian/duwang" image_alignment="centre"/>
+			</container>
+			<widget class="button" id="YFM2" appearance="buttons/custom/over state only/button">
+				<record id="click_event" event_id="OURL" url="https://www.playgm.cn/thread-945138-1-1.html" />
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+			</widget>
+		</container>
+	
+	<container/>
+	
+	<container class="inner_subtle_box" appearance="boxes/inner/subtle/paper1" red_replacement="tip1" height="165">
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+			<container>
+				<attachment_group class="vertical_arrange_autosize" vertical_alignment="top,extend" vertical_offset="0" horizontal_inset="0" />	
+					<container class="inner_subtle_box" appearance="boxes/inner/subtle/paper1" height="25" red_replacement="tip1">
+							 <layout class="stick_to_sides_attachment" apply_to_children="true"/>
+						 
+							<widget class="text" auto_size="vertical"  value="战术" alignment="centre" colour="white" size="10"/> 
+						</container>
+				
+					<widget class="text" auto_size="vertical"  value="Tiki Taka" alignment="centre" colour="white" size="11"/>
+					<widget class="text" auto_size="vertical"  value="作者：reebok1986" alignment="centre" colour="white" size="9"/>
+				<widget class="picture" height="100"  scale_picture="true" keep_aspect_ratio="true" file="tangfu/kuihuabaodian/tikitaka" image_alignment="centre"/>
+			</container>
+			<widget class="button" id="YFM2" appearance="buttons/custom/over state only/button">
+				<record id="click_event" event_id="OURL" url="https://www.playgm.cn/thread-942620-1-1.html" />
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+			</widget>
+		</container>
+	
+	<container/>
+
+	<container class="inner_subtle_box" appearance="boxes/inner/subtle/paper1" red_replacement="tip1" height="165">
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+			<container>
+				<attachment_group class="vertical_arrange_autosize" vertical_alignment="top,extend" vertical_offset="0" horizontal_inset="0" />	
+					<container class="inner_subtle_box" appearance="boxes/inner/subtle/paper1" height="25" red_replacement="tip1">
+							 <layout class="stick_to_sides_attachment" apply_to_children="true"/>
+						 
+							<widget class="text" auto_size="vertical"  value="战术" alignment="centre" colour="white" size="10"/> 
+						</container>
+				
+					<widget class="text" auto_size="vertical"  value="烧鸡翼の战术系列" alignment="centre" colour="white" size="11"/>
+					<widget class="text" auto_size="vertical"  value="作者：stephenhk" alignment="centre" colour="white" size="9"/>
+				<widget class="picture" height="100"  scale_picture="true" keep_aspect_ratio="true" file="tangfu/kuihuabaodian/shaoji" image_alignment="centre"/>
+			</container>
+			<widget class="button" id="YFM2" appearance="buttons/custom/over state only/button">
+				<record id="click_event" event_id="OURL" url="https://www.playgm.cn/thread-941524-1-1.html" />
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+			</widget>
+		</container>
+		
+	<container/>	
+		
+		<container class="inner_subtle_box" appearance="boxes/inner/subtle/paper1" red_replacement="tip1" height="165">
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+			<container>
+				<attachment_group class="vertical_arrange_autosize" vertical_alignment="top,extend" vertical_offset="0" horizontal_inset="0" />
+					
+					<container class="inner_subtle_box" appearance="boxes/inner/subtle/paper1" height="25" red_replacement="tip1">
+							 <layout class="stick_to_sides_attachment" apply_to_children="true"/>
+						 
+							<widget class="text" auto_size="vertical"  value="战术" alignment="centre" colour="white" size="10"/> 
+						</container>
+				
+					<widget class="text" auto_size="vertical"  value="魂氏433战术" alignment="centre" colour="white" size="11"/>
+					<widget class="text" auto_size="vertical"  value="作者：kansmawc" alignment="centre" colour="white" size="9"/>
+				<widget class="picture" height="100"  scale_picture="true" keep_aspect_ratio="true" file="tangfu/kuihuabaodian/hunshi" image_alignment="centre"/>
+			</container>
+			<widget class="button" id="YFM2" appearance="buttons/custom/over state only/button">
+				<record id="click_event" event_id="OURL" url="https://www.playgm.cn/thread-941204-1-1.html" />
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+			</widget>
+		</container>
+	
+
+	
+	<container/>
+	
+			
+		</container>
+		
+		<!--攻略-->
+		<container>
+
+			<layout class="arrange_vertical_attachment" alignment="top" layout="165,3,165,-1" offset="0" gap="1"/>
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+			
+			
+			
+	<container class="inner_subtle_box" appearance="boxes/inner/subtle/paper1" red_replacement="tip4" height="165">
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+			<container>
+				<attachment_group class="vertical_arrange_autosize" vertical_alignment="top,extend" vertical_offset="0" horizontal_inset="0" />	
+
+				<container class="inner_subtle_box" appearance="boxes/inner/subtle/paper1" height="25" red_replacement="tip4">
+							 <layout class="stick_to_sides_attachment" apply_to_children="true"/>
+						 
+							<widget class="text" auto_size="vertical"  value="攻略" alignment="centre" colour="white" size="10"/> 
+						</container>
+				
+					<widget class="text" auto_size="vertical"  value="FM妖人志" alignment="centre" colour="white" size="11"/>
+					<widget class="text" auto_size="vertical"  value="作者：拉尔夫朗尼克" alignment="centre" colour="white" size="9"/>
+				<widget class="picture" height="100"  scale_picture="true" keep_aspect_ratio="true" file="tangfu/kuihuabaodian/yaoren" image_alignment="centre"/>
+			</container>
+			<widget class="button" id="YFM2" appearance="buttons/custom/over state only/button">
+				<record id="click_event" event_id="OURL" url="https://www.playgm.cn/thread-940508-1-1.html" />
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+			</widget>
+		</container>
+	
+	<container/>
+	
+	<container class="inner_subtle_box" appearance="boxes/inner/subtle/paper1" red_replacement="tip4" height="165">
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+			<container>
+				<attachment_group class="vertical_arrange_autosize" vertical_alignment="top,extend" vertical_offset="0" horizontal_inset="0" />	
+
+				<container class="inner_subtle_box" appearance="boxes/inner/subtle/paper1" height="25" red_replacement="tip4">
+							 <layout class="stick_to_sides_attachment" apply_to_children="true"/>
+						 
+							<widget class="text" auto_size="vertical"  value="攻略" alignment="centre" colour="white" size="10"/> 
+						</container>
+				
+					<widget class="text" auto_size="vertical"  value="教大家到底如何实现自己的战术思路" alignment="centre" colour="white" size="11"/>
+					<widget class="text" auto_size="vertical"  value="作者：柏阿姨" alignment="centre" colour="white" size="9"/>
+				<widget class="picture" height="100"  scale_picture="true" keep_aspect_ratio="true" file="tangfu/kuihuabaodian/bo" image_alignment="centre"/>
+			</container>
+			<widget class="button" id="YFM2" appearance="buttons/custom/over state only/button">
+				<record id="click_event" event_id="OURL" url="https://www.playgm.cn/thread-944964-1-1.html" />
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+			</widget>
+		</container>
+	
+	<container/>
+			
+			
+		</container>
+		
+<container/>
+	
+	</container>
+		
+	
+	</container>
+	
+	
+		
+</panel>

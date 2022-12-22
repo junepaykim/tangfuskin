@@ -1,0 +1,211 @@
+<panel>
+
+	<layout class="arrange_horizontal_attachment" layout="350,-1" offset="0" />
+	<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+	<!--1-->
+	<container>
+		<layout class="arrange_vertical_attachment" layout="650,200,-1" offset="0" />
+		<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+	
+	
+	
+	<!--general details-->
+         <container class="bordered_box" default_height="-1" priority="1" minimum_height="200">
+            <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+            <widget class="club_overview_details_panel" file="club/tangfu/club overview details panel" id="clod">
+               <record id="object_property">
+                  <integer id="get_property" value="objt" />
+                  <integer id="set_property" value="objt" />
+               </record>
+            </widget>
+         </container>	
+		 
+ 
+		  <!--kits-->
+			<container class="bordered_box" force_title_borders="true" priority="2" default_height="-2">
+				<translation id="title" translation_id="319448" type="use" value="Kits[COMMENT: title for the club kits the club overview panel]" />
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+				<widget class="club_overview_kits_panel" id="cloK">
+					<record id="object_property">
+						<integer id="get_property" value="objt" />
+						<integer id="set_property" value="objt" />
+					</record>
+				</widget>
+			</container>
+		
+		 <widget class="team_container_information_background_panel" id="Cbac" minimum_height="100" priority="3">
+                    <translation id="title" translation_id="333728" type="use" value="Club Background[COMMENT: title for panel showing a club's background]" />
+					<record id="object_property" get_property="objt" set_property="objt"/> 
+                </widget>	
+			
+  
+  </container>
+  
+  
+  <container class="horizontal_adaptive_container" mode="distribute_equally" >
+		<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+  
+  <!--2-->
+		<container class="vertical_adaptive_container" minimum_width="675" default_width="-1" priority="2"  >
+		<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+		
+		<container id="tstf" class="bordered_box" minimum_height="200" default_height="-1" priority="11"  >
+			  <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+		  <!--tab1-->
+           <container class="tabbed_container" id="tac2"   offset="0"  gap="0"  save_session_state="true" save_default_state="true" draw_vertical_dividers="true" mode="distribute_equally" priority="1" >
+				<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+			<widget class="board_confidence_panel" id="bcsp" file="club/tangfu/board confidence panel" valid_for_international_youth_teams="false" default_item="true" late_loading="true">
+						<translation id="title" translation_id="491848" type="use" value="Confidence Summary[COMMENT: AREA: Confidence; SUB-AREA: Board Confidence; FR-BN: ?; TONE: Formal; CHARLIMIT: If Applicable, otherwise None; REF-ID: n/a; NOTE: title for summary overview of confidence in manager]" />
+                          <record id="object_property" get_property="objt" set_property="objt"/>
+					</widget>
+
+           
+                <widget class="team_transfer_snapshot_panel" id="Tra1" valid_for_fmc="false">
+						<translation id="title" translation_id="296337" type="use" value="Pending Transfers" />
+						<record id="object_property" get_property="objt" set_property="objt"/> 
+					</widget>
+
+                <widget class="team_container_information_background_panel" id="Cbac">
+                    <translation id="title" translation_id="333728" type="use" value="Club Background[COMMENT: title for panel showing a club's background]" />
+					<record id="object_property" get_property="objt" set_property="objt"/> 
+                </widget>
+
+                <widget class="squad_status_snapshot_panel" id="sssn" section="TeSq" late_loading="true" valid_for_unemployed_manager="false">
+                    <translation id="title" translation_id="227783" type="use" value="Squad Status" />
+					<record id="object_property" get_property="objt" set_property="objt"/> 
+                </widget>
+
+                <widget class="team_snapshot_contract_panel" id="tsco" late_loading="true" valid_for_international_teams="false" valid_for_international_youth_teams="false" valid_for_unemployed_manager="false">
+                    <translation id="title" translation_id="255039" type="use" value="Contract Expiry Dates[COMMENT: team contract snapshot panel heading]" />
+					<record id="object_property" get_property="objt" set_property="objt"/> 
+                </widget>
+
+                <widget class="team_snapshot_injury_panel" id="tsin" late_loading="true" valid_for_unemployed_manager="false">
+                    <translation id="title" translation_id="298734" type="use" value="Team Injuries[COMMENT:title for a box containing a list of a team's injuries]" />
+					<record id="object_property" get_property="objt" set_property="objt"/> 
+                </widget>
+
+            </container>
+	  </container>	 
+		
+	<!--staff-->
+         <container id="tstf2" class="bordered_box" minimum_height="340" default_height="340" priority="12"  >
+            <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+            <widget class="club_overview_staff_panel" file="club/club overview staff panel" id="cloS">
+               <record id="object_property">
+                  <integer id="get_property" value="objt" />
+                  <integer id="set_property" value="objt" />
+               </record>
+            </widget>
+         </container>
+		
+		 <container class="bordered_box"  minimum_height="125" default_height="125" priority="13">
+			<translation id="link_title" translation_id="319447" type="use" value="Results[COMMENT: title for the previous set of first team results on the club overview panel]" />
+            <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />	
+			<widget class="club_overview_team_results_panel" file="club/tangfu/club overview team results panel" id="cotr">
+					<record id="object_property">
+						<integer id="get_property" value="objt" />
+						<integer id="set_property" value="objt" />
+					</record>
+				</widget>
+		  </container>
+			
+		  <container/>
+		  </container>
+		  
+		 <!--右边一列-->
+	<container minimum_width="400" default_width="500" priority="3" >
+		<layout class="arrange_vertical_attachment" layout="280,280,-2" offset="0" />
+		<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+		
+			<!--stadium-->
+			<container class="title_link_box" force_title_borders="true" id="Clos" priority="3" default_height="180"  hide_view_menu="true" navigation_focus_target="true">
+				<translation id="link_title" translation_id="229366" type="use" value="Stadium" />
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+				<widget class="text" id="NoSt" alignment="centre">
+					<translation id="text" translation_id="436452" type="use" value="Stadium information not available.[COMMENT: line of text saying when we don't have any information on a team's stadium]" />
+					<record id="object_property">
+						<integer id="get_property" value="TsHA" />
+						<integer id="set_property" value="hidn" />
+					</record>
+				</widget>
+
+				<widget class="club_overview_stadium_panel" id="clos">
+					<record id="object_property">
+						<list id="get_properties">
+							<record>
+								<integer id="get_property" value="TsHA" />
+								<integer id="set_property" value="Shwn" />
+								<boolean id="dont_set_object" value="true" />
+							</record>
+							<record>
+								<integer id="get_property" value="objt" />
+								<integer id="set_property" value="Cclu" />
+								<boolean id="dont_set_object" value="true" />
+							</record>
+							<record>
+								<integer id="get_property" value="Tsre" />
+								<integer id="set_property" value="objt" />
+								<boolean id="dont_set_hint" value="true" />
+							</record>
+						</list>
+					</record>
+				</widget>
+			</container>
+			
+			<!--kits-->
+			<container class="supporter_profile_panel" file="club/tangfu/supporter" id="csup1">
+					<record id="object_property">
+						<integer id="get_property" value="objt" />
+						<integer id="set_property" value="objt" />
+					</record>
+			</container>	
+			
+			<container>
+			<layout class="arrange_horizontal_attachment" layout="-1,-1" offset="0" />
+			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+			
+
+			<!--财政-->
+				<container class="bordered_box" default_height="270" minimum_height="300" priority="2"  > 	
+			<layout class="arrange_horizontal_attachment" layout="-1" offset="0" gap="0"/>
+			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" /> 	
+			<container>
+				<translation id="title" translation_id="329952" type="use" value="Finance &amp; Salary[COMMENT: manager snapshot/home: wage &amp; finances summary panel heading]" />
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />			
+				<widget class="finances_short_wage_summary_panel" id="fina">
+					<record id="object_property">
+						<integer id="get_property" value="objt" />
+						<integer id="set_property" value="objt" />
+					</record>
+				</widget>					
+			</container>
+			</container>
+			
+			
+			<container class="bordered_box" >
+			<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_gap="0" />
+			     <widget class="club_league_history_graph" id="clh1" default_item="true">
+						<translation id="title" translation_id="319446" type="use" value="League History[COMMENT: title for the league position history on the club overview panel]" />
+                           <record id="object_property" get_property="objt" set_property="objt"/>
+					</widget>
+
+			
+			
+		</container>
+			
+			
+			</container>	
+	
+			
+		
+		
+	
+	</container>
+
+</container>
+
+
+</panel>

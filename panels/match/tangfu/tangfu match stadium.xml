@@ -1,0 +1,43 @@
+﻿<panel>
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+
+		
+		<container>
+	
+		<layout class="arrange_vertical_attachment" alignment="middle,extend" offset="-19" gap="0" />
+		<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+		<layout class="stick_to_sides_attachment" alignment="all" inset="-10" />
+			<widget class="table" layout="-3,-1" mode="none" auto_size="vertical" auto_size_rows="true" all_content_same_height="false" fixed_size_rows="false" row_spacing="0">
+		
+			<!-- column properties -->
+			<list id="column_properties">
+				<record indx="0" alignment="right,centre_y" colour="match text" />
+				<record indx="1" alignment="right,centre_y" colour="match text" />
+			</list>
+
+			<!-- column display properties -->
+			<list id="column_display_properties">
+				<record indx="0" right="4" />
+				<record indx="1" left="4" />
+			</list>
+
+		  <!-- Attendance label -->			
+          <widget class="label" id="attl" size="10" background_colour="black" font="new_text" row="2" colour="white" multiline="true" alignment="centre,centre_y" col="0" column_span="2" auto_size="vertical" />
+	   <widget class="text" id="stad" background_colour="hei" row="1" font="new_text" size="10" colour="white" multiline="true" alignment="centre,centre_y" col="0" column_span="2" auto_size="vertical" />
+
+		</widget>
+			
+	
+
+		</container>	
+
+
+
+
+
+
+
+
+
+</panel>

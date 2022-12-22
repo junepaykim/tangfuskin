@@ -1,0 +1,227 @@
+<!-- A dialog panel showing basic player info, a positions pitch, attributes for best role and value for use during draft auto-picking-->
+<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" inset="-5" apply_to_children="true" />
+
+		
+		<container class="player_card_widget" file="none">
+			<layout class="arrange_horizontal_attachment" layout="-1"/>
+
+			<record id="object_property" get_property="objt" set_property="objt"/>
+
+			<!-- Player card-->
+			<container class="main_box" height="300">
+				<layout class="centre_in_parent_attachment" alignment="vertical"/>
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+				
+
+				<!-- Player card -->
+				<container>
+					<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+					<layout class="stick_to_sides_attachment" alignment="vertical" inset="0"/>
+
+					<container height="150" >
+						<!-- Portrait-->
+						<container>
+							<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+							<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+
+							<widget class="object_portrait_picture" id="face" image_alignment="centre_x, bottom" scale_picture="true" keep_aspect_ratio="true" wants_mouse_events="false">
+								<record id="object_property" get_property="objt" set_property="objt" />
+							</widget>
+						</container>
+
+						
+
+
+				
+				</container>
+
+						<container class="plain_box" appearance="" height="54" priority="1" gap="0" >
+			<layout class="arrange_vertical_attachment" layout="-1,-1" offset="0" gap="-10" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0"/>
+				<flags id="child_for_sort" value="PnmP"/>
+				
+				   <widget class="person_button" id="perM" style="semi_bold" alignment="centre">
+        <record id="object_property">
+          <integer id="get_property" value="objt" />
+          <integer id="set_property" value="valu" />
+        </record>
+      </widget>
+			
+	
+	  
+	  
+	  
+				<container>	
+				<layout class="arrange_horizontal_attachment" layout="-1,-1" offset="0" gap="0" />
+			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0"/>
+				
+					<widget class="dob_label" id="age" display_format="2" alignment="right,centre_y">
+								<record id="object_property">
+									<integer id="get_property" value="Pdob" />
+								</record>
+							</widget>
+					
+					<widget class="label" alignment="left,centre_y">
+					<translation id="text" translation_id="227981" type="use" value="Manager" />
+				</widget>	
+					</container>	
+			
+
+	
+	</container>
+		<widget class="horizontal_divider" />	
+					<widget class="table" mode="fill_rows,printable" id="ovst" layout="50, 20, 40, 30" row_height="20" row_spacing="1" >
+
+
+				<!-- disable sorting on all columns -->
+				<list id="column_table_properties">
+					<record indx="0">
+						<boolean id="sort_disabled" value="true" />
+					</record>
+					<record indx="1">
+						<boolean id="sort_disabled" value="true" />
+						<flags id="alignment" value="centre_y" />
+					</record>
+					<record indx="2">
+						<boolean id="sort_disabled" value="true" />
+					</record>
+					<record indx="3">
+						<boolean id="sort_disabled" value="true" />
+						<flags id="alignment" value="centre_y" />
+					</record>
+				</list>
+
+				<record id="object_property">
+					<integer id="get_property" value="objt" />
+					<integer id="set_property" value="objt" />
+				</record>
+
+				<!--Game Played - Entire Career -->
+				<widget class="label" id="Logp" row="0" col="0" style="semi_bold" size="8" colour="white" >
+					<record id="object_property">
+						<integer id="get_property" value="Tgpl" />
+						<boolean id="name" value="true" />
+					</record>
+				</widget>
+				<widget class="dashed_number_label" id="Vogp" row="0" col="1" style="semi_bold" multiline="false"  size="9">
+					<record id="object_property">
+						<integer id="get_property" value="Tgpl" />
+					</record>
+				</widget>
+
+				<!--Games Won - Entire Career -->
+				<widget class="label" id="Logw" row="1" col="0"  size="8" colour="white" >
+					<record id="object_property">
+						<integer id="get_property" value="Tgwn" />
+						<boolean id="name" value="true" />
+					</record>
+				</widget>
+				<widget class="dashed_number_label" id="Vogw" row="1" col="1" style="semi_bold" multiline="false"  size="9">
+					<record id="object_property">
+						<integer id="get_property" value="Tgwn" />
+					</record>
+				</widget>
+				
+		<widget class="horizontal_divider" />			
+
+				<!--Games Drawn - Entire Career -->
+				<widget class="label" id="Logd" row="2" col="0"  size="8" colour="white" >
+					<record id="object_property">
+						<integer id="get_property" value="Tgdw" />
+						<boolean id="name" value="true" />
+					</record>
+				</widget>
+				<widget class="dashed_number_label" id="Vogd" row="2" col="1" style="semi_bold" multiline="false"  size="9">
+					<record id="object_property">
+						<integer id="get_property" value="Tgdw" />
+					</record>
+				</widget>
+
+				<!--Games Lost - Entire Career -->
+				<widget class="label" id="Logl" row="3" col="0"  size="8" colour="white" >
+					<record id="object_property">
+						<integer id="get_property" value="Tglt" />
+						<boolean id="name" value="true" />
+					</record>
+				</widget>
+				<widget class="dashed_number_label" id="Vogl" row="3" col="1" style="semi_bold" multiline="false"  size="9">
+					<record id="object_property">
+						<integer id="get_property" value="Tglt" />
+					</record>
+				</widget>
+				
+		<widget class="horizontal_divider" />			
+
+				<!--Goals Scored - Nation -->
+				<widget class="label" id="Logf" row="0" col="2"  size="8" colour="white" >
+					<record id="object_property">
+						<integer id="get_property" value="Tgfr" />
+						<boolean id="name" value="true" />
+					</record>
+				</widget>
+				<widget class="dashed_number_label" id="Vogf" row="0" col="3" style="semi_bold" multiline="false"  size="9">
+					<record id="object_property">
+						<integer id="get_property" value="Tgfr" />
+					</record>
+				</widget>
+
+				<!--Goals Conceded - Entire Career -->
+				<widget class="label" id="Logc" row="1" col="2"  size="8" colour="white" > 
+					<record id="object_property">
+						<integer id="get_property" value="Tgaa" />
+						<boolean id="name" value="true" />
+					</record>
+				</widget>
+				<widget class="dashed_number_label" id="Vogc" row="1" col="3" style="semi_bold" multiline="false"  size="9">
+					<record id="object_property">
+						<integer id="get_property" value="Tgaa" />
+					</record>
+				</widget>
+				
+				
+		<widget class="horizontal_divider" />			
+
+				<!--Goals Difference - Entire Career -->
+				<widget class="label" id="Lodi" row="2" col="2"  size="8" colour="white" >
+					<record id="object_property">
+						<integer id="get_property" value="Tgdf" />
+						<boolean id="name" value="true" />
+					</record>
+				</widget>
+				<widget class="dashed_number_label" id="Vodi" row="2" col="3" style="semi_bold" multiline="false"  size="9">
+					<record id="object_property">
+						<integer id="get_property" value="Tgdf" />
+					</record>
+				</widget>
+
+				<!-- Win Ratio - Entire Career -->
+				<widget class="label" id="Lowr" row="3" col="2"  size="8" colour="white" >
+					<record id="object_property">
+						<integer id="get_property" value="Tgwr" />
+						<boolean id="name" value="true" />
+					</record>
+				</widget>
+				<widget class="dashed_record_percentage_label" id="Vowr" row="3" col="3" style="semi_bold" multiline="false"  size="9">
+					<record id="object_property">
+						<integer id="get_property" value="Tgwr" />
+					</record>
+				</widget>
+				
+		<widget class="horizontal_divider" />			
+
+				<!-- everything should be left aligned -->
+				<record id="default_properties">
+					<flags id="alignment" value="left,centre_y" />
+				</record>
+			</widget>
+
+				</container>
+
+			</container>
+
+
+		</container>
+
+</panel>

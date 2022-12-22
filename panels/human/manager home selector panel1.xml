@@ -1,0 +1,13 @@
+<panel navigation_container="true">
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+	<container class="title_link_box" force_title_borders="true" id="SUBP" />
+	
+	<!-- Make sure everything is late loading! -->
+
+
+	<widget class="team_league_table_panel" id="tlta" late_loading="true" valid_for_international_teams="false" valid_for_international_youth_teams="false" default_for_club_teams="true" valid_for_unemployed_manager="false">
+		<translation id="title" translation_id="242904" type="use" value="League Table[COMMENT - competition stage panel: title for league table]" />
+	</widget>
+	
+</panel>

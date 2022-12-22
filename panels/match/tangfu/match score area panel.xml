@@ -1,0 +1,159 @@
+﻿<panel width="480">
+	<!--Alternate UI mode-->
+	<integer id="alSM" value="0" />
+	
+	<list id="properties_to_forward">
+		<record get_property="disable_animations" set_property="disable_animations" target="clkc"/>
+		<record get_property="disable_animations" set_property="disable_animations" target="temc"/>
+	</list>
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+
+
+	<container id="mtSA">		
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+
+		
+	<widget class="picture"  file="tangfu/scoreboard/scoreboard4"  scale_picture="true" keep_aspect_ratio="true">
+		<record id="object_property" get_property="objt" set_property="objt" />
+	</widget>
+	
+	<container>
+			<layout class="arrange_horizontal_attachment" layout="-1,43,43,-1" offset="0" gap="0" />
+			<layout class="stick_to_sides_attachment" alignment="vertical" inset="1" apply_to_children="true" />
+			
+		<container/>
+		<widget class="picture" id="T1Co" file="tangfu/scoreboard/home" width="43" />
+	
+		<widget class="picture" id="T2Co" file="tangfu/scoreboard/away" width="43" />
+		<container/>
+		
+	</container>
+
+
+		<container>
+			<layout class="arrange_horizontal_attachment" layout="80,117,86,117,80" offset="0" gap="0" />
+			<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+
+	<!-- Competition icon -->
+		<container class="client_object_viewer_xml_panel"  width="28" >
+
+			<record id="object_property" get_property="fxCo" set_property="objt" />
+			<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+
+			<container class="main_box_no_margin" appearance="" >
+				<record id="object_property" get_property="bkcl" set_property="rrep" />
+				<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="5"/>
+
+				<widget class="object_portrait_picture" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre">
+					<record id="object_property" get_property="objt" set_property="objt" />
+				</widget>
+			</container>
+
+		</container>
+
+			
+				
+			<container class="home_match_incidents_panel" file="match/tangfu/tangfu match team name" height="30" >
+			<record id="object_property">
+				<integer id="get_property" value="objt" />
+				<integer id="set_property" value="objt" />
+			</record>
+		</container>
+
+			
+			<container id="MInf" width="80">
+				<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+				<container>
+					<attachment_group class="vertical_arrange" vertical_alignment="bottom,extend" vertical_gap="-2" vertical_offset="0" horizontal_inset="0" />
+
+					<container navigation_focus_target="false">
+						<attachment_group class="horizontal_arrange" horizontal_alignment="middle" horizontal_gap="2" horizontal_offset="0" vertical_inset="0" />
+
+						<widget class="text" id="T1sc" size="15" font="title" alignment="right,centre_y" colour="black" auto_size="horizontal"/>
+						<widget class="text" size="18" font="title" alignment="centre" text="-" colour="black" auto_size="horizontal"/>
+						<widget class="text" id="T2sc" size="15" font="title" alignment="left,centre_y" colour="black" auto_size="horizontal"/>
+
+					</container>
+
+					<container id="asco">
+						<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="middle"  horizontal_gap="2" horizontal_offset="0" vertical_inset="0" />
+
+						<widget class="text" id="T1as" font="title" alignment="right,centre_y" colour="black" auto_size="all"/>
+						<widget class="text" font="title" alignment="centre" text="-" auto_size="all"/>
+						<widget class="text" id="T2as" font="title" alignment="left,centre_y" colour="black" auto_size="all"/>
+
+					</container>
+				</container>
+			</container>
+
+			<container class="away_match_incidents_panel"  file="match/tangfu/tangfu match team name" height="30"  >
+					<record id="object_property">
+						<integer id="get_property" value="objt" />
+						<integer id="set_property" value="objt" />
+					</record>
+				</container>
+						
+
+
+
+		
+			<!--clock-->
+		<container width="80"  id="clkc">
+			<attachment_group class="vertical_arrange" vertical_alignment="bottom,extend" vertical_offset="0" vertical_gap="0" />
+
+			<!--clock-->
+			<container id="ClkC">
+				<attachment_group class="vertical_arrange" vertical_alignment="middle" vertical_gap="0" horizontal_inset="0" />
+
+				<record id="default_properties" auto_size="vertical" alignment="centre" />
+
+				<container >
+					<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_alignment="middle" horizontal_gap="4"/>
+
+					<record id="default_properties" auto_size="all" alignment="centre" />
+
+					<widget class="text" id="Mclk" size="xlarge" font="title" auto_size="all" />
+
+					<!--injury time indicator-->
+					<container id="MijC" height="16">
+						<attachment_group class="horizontal_arrange_autosize"/>
+
+						<widget class="text" id="Mijt" auto_size="horizontal" alignment="centre" colour="fg positive"/>
+
+					</container>
+
+				</container>
+
+				<widget class="text" id="ClkT" font="title" size="small" multiline="true"/>
+				<!--<widget class="text" id="Pent" size="14" style="semi_bold" />-->
+			</container>
+
+			<!--match time bar-->
+			<widget class="match_time_slider_panel" height="4" file="match/match time slider panel small">
+				<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0,0,0,0"/>
+
+				<record id="object_property">
+					<integer id="get_property" value="objt" />
+					<integer id="set_property" value="objt" />
+				</record>
+			</widget>
+
+		</container>
+
+		
+	
+			
+		</container>
+		
+		</container>
+	
+	<widget class="button" appearance="" navigation_focus_target="false">
+		<record id="click_event">
+			<flags id="event_id" value="TNeV" />
+			<integer id="evfl" value="7" />
+			<flags id="evtg" value="root" />
+		</record>
+	</widget>
+
+</panel>

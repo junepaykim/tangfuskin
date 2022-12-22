@@ -1,0 +1,14 @@
+﻿<!-- an action button that will be used in the news response panels -->
+<class class="sections_menu_strip_match" parent="menu_strip" appearance="" offset="0" gap="0" inset="0" default_widget_type="section_button_match" submenu_type="section_popup_button_match" separator_type="picture" mouse_hovering_time_between_children="0" rationalise_menu="true">
+  <translation id="prioritised_actions_more_string" translation_id="382316" type="use" value="More...[COMMENT: sections menu strip, menubar heading for section that contains miscellaneous items, ellipses needed to hint that things are contained therein]" />
+  <translation id="no_prioritised_actions_more_string" translation_id="382316" type="use" value="More...[COMMENT: sections menu strip, menubar heading for section that contains miscellaneous items, ellipses needed to hint that things are contained therein]" />
+  <record id="default_widget_properties" />
+  <record id="submenu_properties" fixed="true" allow_hover_to_open="false" mouse_hovering_time="20">
+    <event id="click_notification_event" event_id="DMCN" item="NULL" />
+    <event id="menu_layout_notification_event" event_id="MLNO" />
+  </record>
+  <record id="separator_properties" file="dividers/standard/vertical/line" auto_size="horizontal" height="52" />
+  <record id="more_button_properties" appearance="tabs/standard/normal/top/button">
+    <record id="secondary_icon_properties" red_replacement="secondary" />
+  </record>
+</class>

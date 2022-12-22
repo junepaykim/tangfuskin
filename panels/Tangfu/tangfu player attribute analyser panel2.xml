@@ -1,0 +1,105 @@
+<panel>
+  <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+
+  <container class="vertical_adaptive_container" offset="0" inset="0" gap="0" mode="distribute_equally">
+   
+
+   <container minimum_width="100" priority="1" default_width="-1">
+      <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+      <!-- Outfield player -->
+      <container class="person_attributes_analyser_panel" id="ofap" file="Tangfu/player attribute analyser outfield" >
+        <record id="object_property" get_property="Pigo" set_property="hidn"/>
+      </container>
+
+      <!-- Goalkeeper -->
+      <container class="person_attributes_analyser_panel" file="Tangfu/player attribute analyser goalkeeper" id="gkap">
+        <record id="object_property" get_property="Pigo" set_property="Shwn"/>
+      </container>
+    </container>
+   
+     
+					<container class="inner_subtle_box" appearance="boxes/inner/subtle/paper1" >	
+						<layout class="arrange_horizontal_attachment" layout="-1,-1" offset="0" />
+						<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />  
+							
+		
+							
+							<!--2-->
+								<container>	
+								<layout class="arrange_vertical_attachment" layout="2,20,2,20,2,20,2,20,2" offset="0" />
+								<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+						
+					<widget class="horizontal_subtle_divider" default_height="1" />			
+							<widget class="label"  size="8"  alignment="centre_x,centre_y" colour="purple">
+							<translation id="text" translation_id="227856" type="use" value="Gls" />
+					</widget>	
+					<widget class="horizontal_subtle_divider" default_height="1" />		
+							<widget class="label"  size="8"  alignment="centre_x,centre_y" colour="yellow">
+							<translation id="text" translation_id="227846" type="use" value="Ast[comment - Assists]" />
+							<translation id="hint" translation_id="227847" type="use" value="Assists" />
+					</widget>	
+					<widget class="horizontal_subtle_divider" default_height="1" />		
+							<widget class="label"  size="8"  alignment="centre_x,centre_y" colour="cyan">
+							<translation id="text" translation_id="227866" type="use" value="Tck[comment - Tackles per game ratio]" />
+						<translation id="hint" translation_id="227867" type="use" value="Tackles Per Game" />
+					</widget>
+					<widget class="horizontal_subtle_divider" default_height="1" />		
+						<widget class="label"  size="8"  alignment="centre_x,centre_y" colour="green">
+						<translation id="text" translation_id="227852" type="use" value="Av Rat[comment - Average rating]" />
+						<translation id="hint" translation_id="227853" type="use" value="Average rating" />
+					</widget>
+					<widget class="horizontal_subtle_divider" default_height="1" />		
+						
+									
+							</container> 
+							
+							<!--3-->
+							<container>	
+								<layout class="arrange_vertical_attachment" layout="2,20,2,20,2,20,2,20,2" offset="0" />
+								<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+					
+					<widget class="horizontal_subtle_divider" default_height="1" />			
+							<widget class="dashed_number_label"  alignment="centre_x,centre_y" size="12" >
+							<record id="object_property">
+								<integer id="get_property" value="Pogl" />
+							</record>
+							</widget>	
+					<widget class="horizontal_subtle_divider" default_height="1" />		
+							<widget class="dashed_number_label"  alignment="centre_x,centre_y" size="12" >
+								<record id="object_property">
+									<integer id="get_property" value="Poas" />
+								</record>
+								</widget>	
+					<widget class="horizontal_subtle_divider" default_height="1" />		
+							<widget class="dashed_number_label"  alignment="centre_x,centre_y" size="12" >
+								<record id="object_property">
+									<integer id="get_property" value="Pota" />
+								</record>
+								</widget>	
+					<widget class="horizontal_subtle_divider" default_height="1" />				
+							<widget class="match_rating_label_formatted"  alignment="centre_x,centre_y" size="10" >
+								<string id="format" value="[%fraction#1-3.2]" />
+								<boolean id="dont_format_numeric_grouping" value="true" />
+																	
+							<record id="object_property">
+								
+								<integer id="get_property" value="Poav" />
+							</record>
+							</widget>
+					<widget class="horizontal_subtle_divider" default_height="1" />				
+								
+								
+						
+								
+							</container> 
+							
+							
+							
+					<container/> 
+					<container/> 
+					</container>  
+					  
+   
+  </container>
+</panel>

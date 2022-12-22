@@ -1,0 +1,144 @@
+<panel>
+
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+	
+	
+	<widget class="picture" file="tangfu/club/di" image_alignment="top,centre_y,can_scale" scale_picture="true"/>
+	
+	
+
+	<widget class="plain_box" appearance="tangfu/club/paper" red_replacement="primary" image_alignment="top,centre_y,can_scale" scale_picture="true"/>
+	
+	
+	<widget class="picture" id="pict" keep_aspect_ratio="true" image_alignment="centre" scale_picture="true" width="100" height="100">
+				<layout class="stick_to_sides_attachment" alignment="top" inset="10"/>
+				<layout class="stick_to_sides_attachment" alignment="all" inset="60" />
+							<boolean id="keep_aspect_ratio" value="true" />
+							<flags id="image_alignment" value="centre" />
+							<record id="object_property">
+								<integer id="get_property" value="mnpc" />
+							</record>
+						</widget>
+	
+	
+	<container>
+	<layout class="arrange_vertical_attachment" layout="-1,100" offset="0" gap="0" />
+	<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+	
+	
+
+		
+	<container/>
+	
+	
+	
+	
+
+
+
+	<container class="plain_box" appearance="tangfu/club/touming" >
+		<layout class="arrange_vertical_attachment" layout="45,22,22,-1"  offset="0" gap="2"/>
+		<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+			
+		
+				<!--队名-->
+				   <widget class="text" id="sect" alignment="left,top,can_scale"  size="30" style="semi_bold" multiline="false" wants_mouse_events="false" dont_give_default_focus="true" font="tfsy_Heavy" colour="white" >
+						<record id="object_property">
+							<list id="get_properties">
+								<record>
+									<integer id="get_property" value="titl" />
+									<integer id="set_property" value="text" />
+								</record>
+							</list>
+						</record>
+					</widget>
+					
+					<!--声望-->
+					<container  id="REPU">
+						<layout class="arrange_horizontal_attachment" layout="60,80,140,-1"  offset="0" />
+						<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+						
+						<container class="inner_subtle_box" appearance="boxes/inner/subtle/paper1" red_replacement="tip1" >
+                             <layout class="stick_to_sides_attachment" apply_to_children="true"/> 
+							 
+						<widget class="professional_status_label" colour="white" alignment="centre_x,centre_y,can_scale">
+                            <record id="object_property" get_property="Cprs"/>
+                        </widget>	 
+							 
+					
+						</container>
+						
+						<!--昵称-->
+						
+						<container class="inner_subtle_box" appearance="boxes/inner/subtle/paper1" red_replacement="tip2">
+                             <layout class="stick_to_sides_attachment" apply_to_children="true"/>
+								<widget class="text" size="9" colour="white" id="TCnV" mode="1" alignment="centre_x,centre_y,can_scale">
+									<record id="object_property">
+										<integer id="get_property" value="TCnn" />
+									</record>
+								</widget>
+						</container>
+						
+						
+						
+						
+						<container class="inner_subtle_box" appearance="boxes/inner/subtle/paper1" red_replacement="tip3">
+                            <layout class="arrange_horizontal_attachment" layout="50,90"  offset="0" />
+							<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+							
+						<widget class="label" colour="white" alignment="centre_x,centre_y,can_scale">
+                            <translation id="text" translation_id="227963" type="use" value="Reputation" />
+                        </widget>
+						
+						
+						<widget class="club_reputation_stars_label"  alignment="centre_x,centre_y,can_scale">
+                            <record id="object_property" get_property="Csta"/>
+                        </widget>
+						</container>
+						
+						
+						
+						<container/>
+					</container>
+			
+			<!--洲际比赛-->		
+			<container>
+						<layout class="arrange_horizontal_attachment" layout="120,110,-1"  offset="0" />
+						<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />		
+				<container class="inner_subtle_box" appearance="boxes/inner/subtle/paper1" red_replacement="tip4" >
+					 <layout class="stick_to_sides_attachment" apply_to_children="true"/>
+				
+						<widget class="comp_button" comp_display_type="1"  alignment="left,centre_y">				
+							<record id="object_property" get_property="Ccon"/>
+						</widget>
+				 </container>	
+					<!--球队个性-->	
+					<container class="inner_subtle_box" appearance="boxes/inner/subtle/paper1" red_replacement="tip5">
+					 <layout class="stick_to_sides_attachment" apply_to_children="true"/>
+				 
+					<widget class="club_squad_character_label" id="CscV" spec="text"  alignment="centre_x,bottom,can_scale" auto_size="vertical" >
+								<record id="object_property">
+									<integer id="get_property" value="Csca" />
+								</record>
+							</widget>  
+					 </container>
+				<container/>
+			</container>
+		
+			
+			<container/>
+	  </container>
+
+
+	</container>
+
+
+
+
+
+
+
+
+
+
+</panel>

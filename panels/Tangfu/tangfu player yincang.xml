@@ -1,0 +1,212 @@
+<panel>
+	
+		 
+		
+        <layout class="arrange_vertical_attachment" alignment="top, extend" offset="0"/>
+        <layout class="stick_to_sides_attachment" alignment="horizontal" inset="5" apply_to_children="true"/>
+       
+
+        <!-- Additional attributes table -->
+        <container class="client_object_viewer_xml_panel" id="attT">
+          <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+          
+          <widget class="table" layout="-1, 48" mode="fill_rows, stripe_rows, printable" row_height="18" row_spacing="0">
+			<record id="object_property" get_property="objt" set_property="objt" />           
+          	
+            <list id="column_display_properties">
+              <record index="0" left="8" top="3" sort_disabled="true"/>
+              <record index="1" right="8" sort_disabled="true"/>
+            </list>            
+            
+        
+
+           <widget class="label" row="0" column="0" alignment="left, top, can_scale" colour="ycwz1" >
+                <record id="object_property" get_property="PCAB" name="true"/>
+            </widget>
+            <widget class="editable_client_object_property_panel" id="PCAB" row="0" column="1" alignment="right, centre_y, can_scale" style="semi_bold" colour="ycwz1">
+              <record id="object_property" get_property="PCAB"/>
+            </widget>
+            
+            <widget class="label" row="1" column="0" alignment="left, top, can_scale" colour="ycwz1" >
+              <record id="object_property" get_property="PPAB" name="true"/>
+            </widget>
+            <widget class="editable_client_object_property_panel" id="PPAB" row="1" column="1" alignment="right, centre_y, can_scale" style="semi_bold" colour="ycwz1">
+              <record id="object_property" get_property="PPAB"/>
+            </widget>
+			
+			   <widget class="label" row="2" column="0" alignment="left, top, can_scale" >
+             <record id="object_property" name="true" get_property="Pnar"/>
+        </widget>
+        <widget class="editable_client_object_property_panel" id="Pnar" row="2" column="1" alignment="right, centre_y, can_scale" style="semi_bold">
+             <record id="object_property" get_property="Pnar"/>
+        </widget>
+            
+            <widget class="label" row="3" column="0" alignment="left, top, can_scale" >
+              <record id="object_property" get_property="Pada" name="true"/>
+            </widget>
+            <widget class="editable_client_object_property_panel" id="Pada" row="3" column="1" alignment="right, centre_y, can_scale" style="semi_bold">
+            	<record id="widget_info">
+                    <symbol id="class" value="attribute_label" />
+                 </record>
+                 <record id="object_property">
+                    <integer id="get_property" value="Pada" />
+                  </record>
+            </widget>
+            
+            <widget class="label" row="4" column="0" alignment="left, top, can_scale" >
+              <record id="object_property" get_property="Pamb" name="true"/>
+            </widget>
+            <widget class="editable_client_object_property_panel" id="Pamb" row="4" column="1" alignment="right, centre_y, can_scale" style="semi_bold">
+            	<record id="widget_info">
+                    <symbol id="class" value="attribute_label" />
+                 </record>
+                 <record id="object_property">
+                    <integer id="get_property" value="Pamb" />
+                  </record>
+            </widget>
+            
+            <widget class="label" row="5" column="0" alignment="left, top, can_scale" >
+              <record id="object_property" get_property="Ploy" name="true"/>
+            </widget>
+            <widget class="editable_client_object_property_panel" id="Ploy" row="5" column="1" alignment="right, centre_y, can_scale" style="semi_bold">
+            	<record id="widget_info">
+                    <symbol id="class" value="attribute_label" />
+                 </record>
+                 <record id="object_property">
+                    <integer id="get_property" value="Ploy" />
+                  </record>
+            </widget>
+            
+            <widget class="label" row="6" column="0" alignment="left, top, can_scale" >
+              <record id="object_property" get_property="Ppre" name="true"/>
+            </widget>
+            <widget class="editable_client_object_property_panel" id="Ppre" row="6" column="1" alignment="right, centre_y, can_scale" style="semi_bold">
+            	<record id="widget_info">
+                    <symbol id="class" value="attribute_label" />
+                 </record>
+                 <record id="object_property">
+                    <integer id="get_property" value="Ppre" />
+                  </record>
+            </widget>
+            
+            <widget class="label" row="7" column="0" alignment="left, top, can_scale" >
+              <record id="object_property" get_property="Ppro" name="true"/>
+            </widget>
+            <widget class="editable_client_object_property_panel" id="Ppro" row="7" column="1" alignment="right, centre_y, can_scale" style="semi_bold">
+            	<record id="widget_info">
+                    <symbol id="class" value="attribute_label" />
+                 </record>
+                 <record id="object_property">
+                    <integer id="get_property" value="Ppro" />
+                  </record>
+            </widget>
+            
+            <widget class="label" row="8" column="0" alignment="left, top, can_scale" >
+              <record id="object_property" get_property="Pspo" name="true"/>
+            </widget>
+            <widget class="editable_client_object_property_panel" id="Pspo" row="8" column="1" alignment="right, centre_y, can_scale" style="semi_bold">
+            	<record id="widget_info">
+                    <symbol id="class" value="attribute_label" />
+                 </record>
+                 <record id="object_property">
+                    <integer id="get_property" value="Pspo" />
+                  </record>
+            </widget>
+            
+            <widget class="label" row="9" column="0" alignment="left, top, can_scale" >
+              <record id="object_property" get_property="Ptem" name="true"/>
+            </widget>
+            <widget class="editable_client_object_property_panel" id="Ptem" row="9" column="1" alignment="right, centre_y, can_scale" style="semi_bold">
+            	<record id="widget_info">
+                    <symbol id="class" value="attribute_label" />
+                 </record>
+                 <record id="object_property">
+                    <integer id="get_property" value="Ptem" />
+                  </record>
+            </widget>
+            
+            <widget class="label" row="10" column="0" alignment="left, top, can_scale" >
+              <record id="object_property" get_property="Pcvy" name="true"/>
+            </widget>
+            <widget class="editable_client_object_property_panel" id="Pcvy" row="10" column="1" alignment="right, centre_y, can_scale" style="semi_bold">
+            	<record id="widget_info">
+                    <symbol id="class" value="attribute_label" />
+                 </record>
+                 <record id="object_property">
+                    <integer id="get_property" value="Pcvy" />
+                  </record>
+            </widget>
+            
+            <widget class="label" row="11" column="0" alignment="left, top, can_scale" >
+              <record id="object_property" get_property="PCON" name="true"/>
+            </widget>
+            <widget class="editable_client_object_property_panel" id="PCON" row="11" column="1" alignment="right, centre_y, can_scale" style="semi_bold">
+            	<record id="widget_info">
+                    <symbol id="class" value="attribute_label" />
+                 </record>
+                 <record id="object_property">
+                    <integer id="get_property" value="PCON" />
+                  </record>
+            </widget>
+            
+            <widget class="label" row="12" column="0" alignment="left, top, can_scale" >
+              <record id="object_property" get_property="Pdir" name="true"/>
+            </widget>
+            <widget class="editable_client_object_property_panel" id="Pdir" row="12" column="1" alignment="right, centre_y, can_scale" style="semi_bold">
+            	<record id="widget_info">
+                    <symbol id="class" value="attribute_label" />
+                 </record>
+                 <record id="object_property">
+                    <integer id="get_property" value="Pdir" />
+                  </record>
+            </widget>
+            
+             <widget class="label" row="13" column="0" alignment="left, top, can_scale" >
+              <record id="object_property" get_property="Pimp" name="true"/>
+            </widget>
+            <widget class="editable_client_object_property_panel" id="Pimp" row="13" column="1" alignment="right, centre_y, can_scale" style="semi_bold">
+            	<record id="widget_info">
+                    <symbol id="class" value="attribute_label" />
+                 </record>
+                 <record id="object_property">
+                    <integer id="get_property" value="Pimp" />
+                  </record>
+            </widget>
+            
+            <widget class="label" row="14" column="0" alignment="left, top, can_scale" >
+              <record id="object_property" get_property="Pipr" name="true"/>
+            </widget>
+            <widget class="editable_client_object_property_panel" id="Pipr" row="14" column="1" alignment="right, centre_y, can_scale" style="semi_bold">
+            	<record id="widget_info">
+                    <symbol id="class" value="attribute_label" />
+                 </record>
+                 <record id="object_property">
+                    <integer id="get_property" value="Pipr" />
+                  </record>
+            </widget>
+            
+            <widget class="label" row="15" column="0" alignment="left, top, can_scale" >
+              <record id="object_property" get_property="Pver" name="true"/>
+            </widget>
+            <widget class="editable_client_object_property_panel" id="Pver" row="15" column="1" alignment="right, centre_y, can_scale" style="semi_bold">
+            	<record id="widget_info">
+                    <symbol id="class" value="attribute_label" />
+                 </record>
+                 <record id="object_property">
+                    <integer id="get_property" value="Pver" />
+                  </record>
+            </widget>
+                       
+                       
+           </widget>        
+           
+           
+        </container>     
+        
+        
+
+        
+
+
+
+</panel>

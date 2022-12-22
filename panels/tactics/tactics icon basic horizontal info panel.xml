@@ -1,0 +1,62 @@
+<panel>
+	<attachment_group class="vertical_arrange_autosize" vertical_offset="0"/>
+
+	<container class="plain_box" id="bssl" appearance="boxes/custom/tactics kit/selected/paper" hidden="true">
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+	</container>
+
+	<container>
+		<attachment_group class="vertical_arrange_autosize" vertical_gap="-10" vertical_offset="0"/>
+
+		<container>
+			<attachment_group class="vertical_arrange_autosize" vertical_gap="0" vertical_offset="0"/>
+
+			<container height="20">
+				<attachment_group class="horizontal_arrange" horizontal_alignment="middle"/>
+				<widget class="client_object_property_panel" property="PinD" width="20">
+					<record id="object_property" get_property="objt" set_property="objt" />
+					<record id="widget_properties">
+						<flags id="label_disabled" value="true" />
+					</record>
+				</widget>
+
+
+			</container>
+
+			<container height="80" >
+				<attachment_group class="horizontal_arrange" horizontal_alignment="middle"/>
+
+				<widget class="client_object_property_panel" property="PsnS" width="50">
+					<record id="object_property" get_property="objt" set_property="objt" />
+				</widget>
+
+				<widget class="client_object_property_panel" property="MPgl" width="30">
+					<record id="object_property" get_property="objt" set_property="objt" />
+					<record id="widget_properties">
+						<flags id="scale_picture" value="false" />
+						<flags id="image_alignment" value="top" />
+						<flags id="auto_size" value="horizontal"/>
+						<boolean id="label_disabled" value="true"/>
+					</record>
+				</widget>
+
+			</container>
+
+		</container>
+
+		<container>
+			<attachment_group class="vertical_arrange_autosize" vertical_gap="0" vertical_offset="0"/>
+
+			<widget class="text" id="name" auto_size="all" alignment="centre" multiline="false" style="semi_bold">
+				<layout class="centre_in_parent_attachment" alignment="horizontal"/>
+			</widget>
+
+			<widget class="match_rating_label_formatted" id="avra" auto_size="all" alignment="centre" format="[%fraction#1-2.1]" navigation_focus_target="false">
+				<layout class="centre_in_parent_attachment" alignment="horizontal"/>
+			</widget>
+
+		</container>
+
+	</container>
+
+</panel>

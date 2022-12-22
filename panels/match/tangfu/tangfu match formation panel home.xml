@@ -1,0 +1,63 @@
+﻿<panel>
+	<layout class="arrange_horizontal_attachment" layout="-1,-1" offset="0" gap="1" />
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+ 
+
+	
+	<container>				
+		<layout class="arrange_vertical_attachment" layout="-1,-1" offset="0" gap="1" />
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+	
+	<!--主队射门-->
+	<widget class="match_live_data_analyst_visualisation_panel" id="hfSM">
+		<record id="object_property" get_property="objt" set_property="objt" />
+		<record id="widget_properties" type="0"/>
+		<translation id="title" translation_id="514222" type="use" value="Shot Map[COMMENT: AREA: Visualisation Header; SUB-AREA: Shot map header FR: 32932; TONE: Formal; CHARLIMIT: None NOTE: Shot map header string]" />
+	</widget>
+	
+	<container>				
+		<layout class="arrange_horizontal_attachment" layout="-1,-1" offset="0" gap="1" />
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+	
+	
+	<!--主队热点图-->
+	<widget class="preselected_match_chalkboard_panel"  id="pmcH" vertical="true" force_left_to_right_events="true" team_to_display="0" average_position_filter="1" aHiL="false" wants_global_events="false"  enable_popup="false">
+		<record id="object_property" get_property="objt" set_property="objt" />
+		<list id="chalkboard_events_to_display">
+			<!-- Heatmap -->
+			<integer value="42" />
+			<!--Average position-->
+			<integer value="62" />  
+		</list>
+	</widget>
+
+											
+	<!--主队传球-->
+		<widget class="preselected_match_chalkboard_panel" pitch_draw_arrows="true" vertical="true" pitch_dont_draw_indicators="false" force_left_to_right_events="true" id="pChk" team_to_display="0" average_position_filter="0" enable_popup="ture">
+			<record id="object_property" get_property="objt" set_property="objt" />
+				<list id="chalkboard_events_to_display">
+					<!-- Pass Combinations -->
+					<integer value="63" />
+					<!--Key Pass -->
+					<integer value="43" /> 
+				</list>
+		</widget>
+		
+		
+	</container>		
+		
+		
+		
+	</container>	
+
+
+<!--阵型-->
+	<widget class="match_formation_panel" id="hmtt" file="match/tangfu/match formation panel review" team_index="0" read_only="true">
+		<translation id="title" translation_id="230056" type="use" value="Tactics" />
+		<record id="object_property" get_property="objt" set_property="objt" />
+	</widget>
+	
+	
+
+</panel>

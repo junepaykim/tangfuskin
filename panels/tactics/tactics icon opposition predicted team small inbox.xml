@@ -1,0 +1,51 @@
+﻿<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+	<container>
+		<attachment_group class="vertical_arrange" vertical_alignment="bottom,extend" vertical_offset="0" vertical_gap="1" horizontal_inset="0"/>
+
+		<container>
+			<container>
+				<layout class="stick_to_sides_attachment" alignment="all" inset="4" apply_to_children="true"/>
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+				
+				<!--头像-->
+			
+				<widget class="object_portrait_picture" id="pict" scale_picture="true"  image_alignment="centre, top">
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+
+					<record id="object_property">
+						<integer id="get_property" value="objt"/>
+						<integer id="set_property" value="objt"/>
+					</record>
+				</widget>	
+		
+				<widget class="text" id="bsnm" size="8" alignment="centre"/>
+			</container>
+
+			<container>
+				<layout class="arrange_horizontal_attachment" alignment="middle" offset="-100" gap="0"/>
+				<layout class="stick_to_sides_attachment" alignment="top" inset="0" apply_to_children="true"/>
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+
+				<record id="default_properties" image_alignment="centre" hidden="true" width="16" height="16" />
+
+				<widget class="picture" id="PTgs" file="icons/16px/goal" />
+				<widget class="picture" id="PTas" file="icons/16px/assist" />
+				<widget class="picture" id="PTrt" file="icons/16px/key player" />
+				<widget class="picture" id="PNba" file="icons/16px/yellow card" />
+				<widget class="picture" id="PHNO" file="icons/16px/debut" />
+			</container>
+
+		</container>
+
+		<container class="main_box" appearance="boxes/custom/darken/rounded/no margin/paper">
+			<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="-2" horizontal_inset="0" />
+			
+			<widget class="text" id="name" colour="text" size="8" alignment="centre,can_scale" auto_size="vertical" multiline="false" style="semi_bold"/>
+			<widget class="tactical_role_label" id="role" abbt="false" size="xsmall" auto_size="vertical" alignment="centre,can_scale" colour="faded white"/>	
+		</container>
+
+	</container>
+
+</panel>

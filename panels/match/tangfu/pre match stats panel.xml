@@ -1,0 +1,120 @@
+<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+	<container class="empty_state" id="hidr" hidden="true" header_widget="spNL">
+
+		<!--explanatory text-->
+		<widget class="text" alignment="centre" auto_size="vertical" size="9" font="fonts/letterpressed" id="spNL">
+			<translation id="text" translation_id="357279" type="use" value="Stat Pack is only available for league games.[COMMENT: Panel text, explaining why the Stat Pack is not being displayed]" />
+		</widget>
+
+	</container>
+
+	<container id="maCN">
+		<attachment_group class="vertical_arrange" vertical_alignment="fill" vertical_offset="0" horizontal_inset="0" />
+
+		
+		<container>
+			<attachment_group class="horizontal_arrange" horizontal_layout="-2" horizontal_offset="0" vertical_inset="0" />
+
+			<container class="main_box">
+				<translation id="title" translation_id="348255" type="use" value="Player stats[COMMENT: Pre match stat pack panel; title of section showing a table of top players stats comparison]" />
+				<attachment_group class="vertical_arrange" vertical_alignment="fill" vertical_offset="0" vertical_gap="10" horizontal_inset="0" />
+				<container>
+					<attachment_group class="horizontal_arrange" horizontal_layout="-1,-1" horizontal_offset="0" horizontal_gap="10" vertical_inset="0" />
+
+					<!--Goals-->
+					<container class="inner_subtle_box" appearance="boxes/custom/match/stat pack/paper" navigation_container="true">
+						<attachment_group class="vertical_arrange" vertical_layout="25,-1" vertical_offset="0" vertical_gap="0" horizontal_inset="0" />
+
+						<container class="label" alignment="centre" size="9" style="bold">
+							<translation id="text" translation_id="227857" type="use" value="Goals" />
+						</container>
+
+						<container class="client_object_viewer_xml_panel" id="mGLS" file="player/tangfu/player stats table item">
+							<record id="object_property">
+								<list id="get_properties">
+									<record>
+										<integer id="get_property" value="objt" />
+										<integer id="set_property" value="valu" />
+									</record>
+								</list>
+							</record>
+						</container>
+
+
+					</container>
+
+					<!--Assists-->
+					<container class="inner_subtle_box" appearance="boxes/custom/match/stat pack/paper" navigation_container="true">
+						<attachment_group class="vertical_arrange" vertical_layout="25,-1" vertical_offset="0" vertical_gap="0" horizontal_inset="0" />
+
+						<container class="label" alignment="centre" size="9" style="bold">
+							<translation id="text" translation_id="227847" type="use" value="Assists" />
+						</container>
+
+						<container class="client_object_viewer_xml_panel" id="MAsi" file="player/tangfu/player stats table item">
+							<record id="object_property">
+								<list id="get_properties">
+									<record>
+										<integer id="get_property" value="objt" />
+										<integer id="set_property" value="valu" />
+									</record>
+								</list>
+							</record>
+						</container>
+
+					</container>
+				</container>
+				<container>
+					<attachment_group class="horizontal_arrange" horizontal_layout="-1,-1" horizontal_offset="0" horizontal_gap="10" vertical_inset="0" />
+
+					<!--Shots-->
+					<container class="inner_subtle_box" appearance="boxes/custom/match/stat pack/paper" navigation_container="true">
+						<attachment_group class="vertical_arrange" vertical_layout="25,-1" vertical_offset="0" vertical_gap="0" horizontal_inset="0" />
+
+						<container class="label" alignment="centre" size="9" style="bold">
+							<translation id="text" translation_id="247381" type="use" value="Shots" />
+						</container>
+
+						<container class="client_object_viewer_xml_panel" id="MSHT" file="player/tangfu/player stats table item">
+							<record id="object_property">
+								<list id="get_properties">
+									<record>
+										<integer id="get_property" value="objt" />
+										<integer id="set_property" value="valu" />
+									</record>
+								</list>
+							</record>
+						</container>
+					</container>
+
+					<!--Shots on Target-->
+					<container class="inner_subtle_box" appearance="boxes/custom/match/stat pack/paper" navigation_container="true">
+						<attachment_group class="vertical_arrange" vertical_layout="25,-1" vertical_offset="0" vertical_gap="0" horizontal_inset="0" />
+
+						<container class="label" alignment="centre" size="9" style="bold">
+							<translation id="text" translation_id="249450" type="use" value="Shots on target" />
+						</container>
+
+						<container class="client_object_viewer_xml_panel" id="SOTG" file="player/tangfu/player stats table item">
+							<record id="object_property">
+								<list id="get_properties">
+									<record>
+										<integer id="get_property" value="objt" />
+										<integer id="set_property" value="valu" />
+									</record>
+								</list>
+							</record>
+						</container>
+
+					</container>
+				</container>
+			</container>
+			
+			
+			
+		
+		</container>
+	</container>
+</panel>

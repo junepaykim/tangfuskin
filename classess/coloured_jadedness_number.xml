@@ -1,0 +1,22 @@
+
+<!-- setting the 'icon' property on this should change the root folder for the appearance used to indicate checked states. icon="checkbox" would be the default -->
+<class class="coloured_jadedness_number" parent="number_label" alignment="centre_x,centre_y" format="[%number#1-nth]">
+  <list id="value_list">
+    <record min_value="-500" max_value="-301" colour="grey">
+		<translation id="hint" type="use" value=""/>
+    </record> 
+    <record min_value="-300" max_value="-101" colour="cyan">
+		<translation id="hint" type="use" value=""/>
+    </record> 
+    <record min_value="-100" max_value="100" colour="yellow" >
+		<translation id="hint" type="use" value=""/>
+    </record> 
+    <record min_value="101" max_value="300" colour="orange" >
+		<translation id="hint" type="use" value=""/>
+    </record> 
+    <record min_value="301" max_value="1000" colour="red" >
+		<translation id="hint" type="use" value=""/>
+    </record> 
+  
+  </list>
+</class>

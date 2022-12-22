@@ -1,0 +1,29 @@
+<!DOCTYPE panel SYSTEM "http://www.sigames.com/dtds/sios/panel.dtd">
+
+<panel title="workings" >
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>  
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="120,600,30,60"/>
+
+
+	<widget class="button" text="" appearance="button/hide_options/button">
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+
+		<event id="click_event" event_id="kev8"/>
+
+		<attachment class="event_relay_attachment" event_id="kev8">
+			<record id="action_event">
+				<flags id="event_id" value="hide"/>
+				<flags id="event_target" value="zhuy"/>
+			</record>
+		</attachment>
+
+	</widget>  
+
+	
+		<widget class="picture"  file="tangfu/zhuyi/zhuyi"  scale_picture="true" keep_aspect_ratio="true">
+			<record id="object_property" get_property="objt" set_property="objt" />
+		</widget>
+
+	
+		
+</panel>

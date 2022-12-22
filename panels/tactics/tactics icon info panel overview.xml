@@ -1,0 +1,240 @@
+<panel use_hit_mask="true" navigation_focus_target="true">
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+
+	<flags id="appearance" value="boxes/custom/tactics kit/paper"/>
+	<boolean id="should_force_refresh" value="true"/>
+
+	<container class="plain_box" id="bssl" appearance="boxes/custom/tactics kit/selected/paper" hidden="true" >
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+		<layout class="stick_to_sides_attachment" alignment="vertical" inset="10" />
+	</container>
+
+	<container>
+		<layout class="arrange_vertical_attachment" layout="60, -1" offset="0" gap="2"/>
+		<layout class="stick_to_sides_attachment" alignment="horizontal" inset="1" apply_to_children="true"/>
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+
+		<container class="spacer" id="kitS"/>
+
+		<widget class="tactics_kit_picture" id="kitp" keep_aspect_ratio="true" alignment="centre" scale_picture="true" number_inset_right="0" number_inset_top="0" number_height="45">
+		<layout class="stick_to_sides_attachment" alignment="left" inset="0"/>
+		</widget>
+
+		
+	</container>
+
+
+	
+	
+
+		<!--头像-->
+		<container>
+		<layout class="stick_to_sides_attachment" alignment="all" inset="15" apply_to_children="true"/>
+			<widget class="object_portrait_picture" id="pict" scale_picture="true"  wants_mouse_events="false">
+				<layout class="stick_to_sides_attachment" alignment="right" inset="0"/>
+				<layout class="stick_to_sides_attachment" alignment="bottom" inset="30"/>
+
+				<record id="object_property">
+					<integer id="get_property" value="objt"/>
+					<integer id="set_property" value="objt"/>
+				</record>
+			</widget>	
+		</container>
+		<!--伤病-->
+		<container>
+	<layout class="stick_to_sides_attachment" alignment="top,right" inset="0" apply_to_children="true"/>
+
+	<!--injury/red/yellow card -->
+	<container class="inner_box_no_margin" id="inji" height="16" width="16">
+	</container>
+	</container>
+
+
+
+
+		<!--单人职责设置图标-->
+	<container id="gpIN">
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+
+		<widget class="picture" file="icons/custom/player instruction/player pitch" id="PInI" image_alignment="bottom,right" scale_picture="false">
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0,0,30,0" /><!--上左下右-->
+		</widget>
+	</container>
+
+
+		<!-- 平均分gif -->
+		<widget class="value_based_picture" id="avg1" >
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+
+			
+			<list id="value_list">
+				<record min_value="0" max_value="5.99" file="tangfu/gif/A1" />
+				<record min_value="6" max_value="6.69" file="tangfu/gif/A2"/>
+				<record min_value="6.7" max_value="6.99" file="tangfu/gif/A3"/>
+				<record min_value="7" max_value="7.49" file="tangfu/gif/A4"/>
+				<record min_value="7.5" max_value="10" file="tangfu/gif/A5"/>	
+			</list>
+			<record id="object_property">			
+				<integer id="get_property" value="CcAR" />
+			</record>
+		</widget>
+
+
+		<!-- Player status icon with a fitness donut as first item-->
+		<widget class="player_status_all_button" id="plsA" appearance="buttons/custom/status round" auto_size="all" alignment="bottom" offset_x="0" offset_y="4" gap="-4" maximised="false" max_items_per_row_or_column="3" embed_in_frame="true">
+			<layout class="stick_to_sides_attachment" alignment="left,top" inset="0" embed_in_frame="true" />
+
+			<!-- Get player status flags-->
+			<record id="object_property" get_property="Pnfo" dont_set_hint="true"/>
+			<!-- Set icon to only show: Inj, Tir-->
+			<integer id="type" value="3" />
+
+			<!-- Fitness donut instead of icon embeded in frame -->
+			<widget class="pie_condition_label" id="fPie" file="widgets/pie condition no label" mode="2" width="20" height="20" embed_in_frame="true">
+				<layout class="stick_to_sides_attachment" alignment="left,top" inset="2,5" embed_in_frame="true" />
+
+				<record id="object_property" get_property="PRCF" />
+			</widget>
+		</widget>
+
+	<!--左脚图片-->
+
+		<widget class="value_based_picture" id="Mlft" >
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+			<list id="value_list">
+				<record min_value="1" max_value="4" file="tangfu/smallfoot/L1"/>
+				<record min_value="5" max_value="8" file="tangfu/smallfoot/L2"/>
+				<record min_value="9" max_value="12" file="tangfu/smallfoot/L3"/>
+				<record min_value="13" max_value="16" file="tangfu/smallfoot/L4"/>
+				<record min_value="17" max_value="20" file="tangfu/smallfoot/L5"/>
+			</list>
+			<record id="object_property">
+				<integer id="get_property" value="PlfG" />
+			</record>
+		</widget>
+
+	<!-- 右脚图片 -->
+	
+		<widget class="value_based_picture" id="Mrft" >
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+			<list id="value_list">
+				<record min_value="1" max_value="4" file="tangfu/smallfoot/R1"/>
+				<record min_value="5" max_value="8" file="tangfu/smallfoot/R2"/>
+				<record min_value="9" max_value="12" file="tangfu/smallfoot/R3"/>
+				<record min_value="13" max_value="16" file="tangfu/smallfoot/R4"/>
+				<record min_value="17" max_value="20" file="tangfu/smallfoot/R5"/>
+			</list>
+			<record id="object_property">
+				<integer id="get_property" value="PrfG" />
+			</record>
+		</widget>
+		
+
+		
+		
+		<!--文字-->
+	<container class="main_box" id="nmcN" appearance="boxes/custom/tactics kit/paper">
+		<layout class="arrange_vertical_attachment" alignment="bottom" offset="0"/>
+		<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0,0,0,0" apply_to_children="true"/>
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+
+		<container class="main_contrast_box_no_margin" id="bcIM" red_replacement="teal 900" height="32" >
+			<layout class="arrange_vertical_attachment" alignment="fill" offset="0" gap="0"/>
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+			<container>
+				<container id="OUTE" >
+					<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0"/>
+					<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+
+					<!-- Extra container level to make the animations work -->
+					<container height="16">
+						<layout class="stick_to_sides_attachment" alignment="all" inset="-2" top="-2" apply_to_children="true"/>
+
+						<!--role/duty-->
+						<widget class="role_duty_popup_button_mini" id="rodu" size="xsmall" auto_size="none" secondary_icon="icons/custom/misc/small down" alignment="centre" disabled_colour="faded white">
+							<animation class="scale_animation" animation_id="extd" duration="0.15" trigger_id="hidden" trigger_value="false" start_value="1.0,0.0" end_value="1.0,1.0" centre_point="0.0, 0.0" delay_widget_hide="false" />
+						</widget>
+
+						<!--info (morale, rating, condition)-->
+						<container id="info" hidden="true">
+							<layout class="arrange_horizontal_attachment" layout="12,-1,20" offset="4" gap="2"/>
+							<layout class="stick_to_sides_attachment" alignment="vertical" inset="1" apply_to_children="true"/>
+
+							<animation class="scale_animation" animation_id="extd" duration="0.15" trigger_id="hidden" trigger_value="false" start_value="1.0,0.0" end_value="1.0,1.0" centre_point="0.0, 1.0" delay_widget_hide="false" />
+
+							<!--morale-->
+							<widget class="morale_label" id="Mora"  width="12" height="12" colour="faded white" smpc="true" ShTx="false" scale_picture="true" />
+
+							<!--rating and position share a slot - show one or the other-->
+							<container>
+								<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+
+								<widget class="dashed_number_label" id="avra" alignment="centre" size="small" colour="white" wants_mouse_events="false"/>
+								<widget class="position_label" id="Ppos" alignment="centre" colour="faded white" size="6.4" wants_mouse_events="false"/>
+							</container>
+
+							<!--condition-->
+							<widget class="player_condition_icon_widget" id="cond" >
+								<flags id="appearance" value="" />
+								<boolean id="label_disabled" value="true" />
+							</widget>
+						</container>
+
+						<!--familiarity container-->
+						<container id="fmiL">
+							<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+							<widget class="player_tactical_familiarity_bar" id="fmBR" auto_hidden="false">
+								<animation class="scale_animation" animation_id="extd" duration="0.15" trigger_id="hidden" trigger_value="false" start_value="1.0,0.0" end_value="1.0,1.0" centre_point="0.0, 0.0" delay_widget_hide="false" />
+							</widget>
+
+						</container>
+
+						<!--playing time container-->
+						<container id="play">
+							<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+							<widget class="reserves_recommended_playing_time_popup" id="ptBR" select_event="eRSP" appearance="buttons/custom/tactics/role picker mini/button" red_replacement="black" alignment="centre">
+								<animation class="scale_animation" animation_id="extd" duration="0.15" trigger_id="hidden" trigger_value="false" start_value="1.0,0.0" end_value="1.0,1.0" centre_point="0.0, 0.0" />
+							</widget>
+
+						</container>
+
+					</container>
+
+
+				</container>
+			</container>
+
+			<container class="bordered_box" appearance="boxes/custom/tangfu tactics/paper" red_replacement="black" height="38">
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+
+				<container>
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+					<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0"/>
+
+					<!--name-->
+					<widget class="player_picker_button" entity_layout_id="it02" id="plPB" file="widgets/player selection button tactics" editor_group_id="it10" navigation_focus_target="true">
+						<string id="draggable" value="false"/>
+					</widget>
+				</container>
+			</container>
+		</container>
+	</container>
+
+	<!--位置熟练度-->
+	<container>
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+
+		
+		<widget class="position_role_duty_suitability_pie" id="prdF" width="18" height="18">
+			<layout class="stick_to_sides_attachment" alignment="left" inset="1"/>
+			<layout class="stick_to_sides_attachment" alignment="bottom" inset="18"/>
+
+			
+		</widget>
+	</container>
+		
+	
+		
+</panel>

@@ -1,0 +1,88 @@
+<panel>
+	
+
+					<layout class="arrange_vertical_attachment" layout="-2,50" offset="0" />
+					<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+					
+	
+					
+					
+					 <container class="scrolling_box">
+						
+
+
+						
+						<!--Key- and other reasons subpanel (panel autosizes)-->
+						<widget class="player_reports_overview_summary_panel" file="player/tangfu/player reports overview summary vertical scouting card" mode="6">
+							<record id="object_property">
+								<list id="get_properties">
+									<record>
+										<integer id="get_property" value="Pspc" />
+										<integer id="set_property" value="Pspc" />
+									</record>
+									<record>
+										<integer id="get_property" value="Shlo" />
+										<integer id="set_property" value="Shlo" />
+									</record>
+									<record>
+										<integer id="get_property" value="Pers" />
+										<integer id="set_property" value="objt" />
+									</record>
+									<record>
+										<integer id="get_property" value="hpde" />
+										<integer id="set_property" value="hidn" />
+									</record>
+								</list>
+							</record>
+						</widget>
+
+					</container>
+
+					
+			
+			
+			
+			
+
+			
+			<container class="player_reports_overview_summary_panel" id="ovvw" always_recolour_wage_cost_text="true" recommendation_widget_mode="0" mode="1" file="none">
+			<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+			<container class="horizontal_adaptive_container">
+
+				<!-- Pros icons -->
+				<container class="inner_subtle_box" appearance="boxes/inner/subtle/paper2"  red_replacement="green" priority="1" default_width="-1" minimum_width="100">
+					<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="4" />
+					<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+					<container class="scrolling_box">
+						<widget class="horizontal_arrange_container" id="mpro" wrap="true" gap="1" auto_size="vertical">
+							<integer id="size" value="20" />
+						</widget>
+					</container>
+
+				</container>
+
+				<!-- Cons icons -->
+				<container class="inner_subtle_box" appearance="boxes/inner/subtle/paper2"  red_replacement="red" priority="2" default_width="-1" minimum_width="100">
+					<layout class="stick_to_sides_attachment" apply_to_children="true" inset="0,-1,0,-1"/>
+
+					<container class="scrolling_box">
+						<widget class="horizontal_arrange_container" id="mcon" wrap="true" gap="1" auto_size="vertical">
+							<integer id="size" value="20" />
+						</widget>
+					</container>
+
+				</container>
+
+			</container>
+
+	
+			
+			</container>
+			
+
+
+
+
+</panel>

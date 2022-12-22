@@ -1,0 +1,205 @@
+<panel>
+
+	<layout class="arrange_horizontal_attachment" layout="-2,-3,-2" offset="0" />
+	<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+	
+	<!--左边一列-->
+	<container>
+		<layout class="arrange_vertical_attachment" layout="-1,-1,-2" offset="0" />
+		<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+		
+			<!--选择器1-->
+				<container class="main_box" id="at78">
+			<translation id="title" translation_id="281393" type="use" value="Legends[COMMENT: heading; team_information_panel; list of legends persons to current club]" />
+			<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_gap="0" />
+			<container class="legend_list_table" id="TLeg">
+				<record id="object_property">
+					<string id="get_property" value="TLeg" />
+				</record>
+				<list id="column_widget_properties">
+					<record indx="0"  navigation_focus_target="false"/>
+				</list>
+			</container>
+		</container>
+		
+			
+			<!--结果-->
+			<container class="title_link_box" force_title_borders="true" minimum_height="140" id="TeRe" priority="2" default_height="180" hide_view_menu="true" navigation_container="true">
+				<translation id="link_title" translation_id="319447" type="use" value="Results[COMMENT: title for the previous set of first team results on the club overview panel]" />
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+				<widget class="club_overview_team_results_panel" id="cotr">
+					<record id="object_property">
+						<integer id="get_property" value="objt" />
+						<integer id="set_property" value="objt" />
+					</record>
+				</widget>
+			</container>
+				
+			<!--上一场阵容-->
+			
+
+
+			<container class="main_box" id="at80">
+			<translation id="title" translation_id="289355" type="use" value="Icons[COMMENT: heading; team_information_panel; list of legends persons to current club]" />
+			<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_gap="0" />
+			<container class="legend_list_table" id="Csvp">
+				<record id="object_property">
+					<string id="get_property" value="Csvp" />
+				</record>
+				<list id="column_widget_properties">
+					<record indx="0"  navigation_focus_target="false"/>
+				</list>
+			</container>
+		</container>
+		
+		
+		
+		
+	</container>
+	
+	<!--中间一列-->
+	<container>
+		<layout class="arrange_vertical_attachment" layout="405,350,-5" offset="0" />
+		<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+			<!--logo信息-->
+			
+	
+		<!--general details-->
+         <container class="bordered_box" default_height="-1" priority="1" minimum_height="200">
+            <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+            <widget class="club_overview_details_panel" id="clod">
+               <record id="object_property">
+                  <integer id="get_property" value="objt" />
+                  <integer id="set_property" value="objt" />
+               </record>
+            </widget>
+         </container>	
+
+		<!--staff-->
+         <container id="tstf" class="bordered_box"  >
+            <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+            <widget class="club_overview_staff_panel" file="club/club overview staff panel" id="cloS">
+               <record id="object_property">
+                  <integer id="get_property" value="objt" />
+                  <integer id="set_property" value="objt" />
+               </record>
+            </widget>
+         </container>	
+	
+
+			
+			<!--第2行-->
+		 <!--荣誉-->
+         <container  minimum_height="100" priority="2" default_height="100">
+            <translation id="title" translation_id="232146" type="use" value="Honours" />
+            <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+            <widget class="team_container_honours_panel" id="hons">
+               <record id="object_property">
+                  <integer id="get_property" value="objt" />
+                  <integer id="set_property" value="objt" />
+               </record>
+            </widget>
+         </container>
+	</container>
+	
+	<!--右边一列-->
+	<container>
+		<layout class="arrange_vertical_attachment" layout="-2,-2,-3" offset="0" />
+		<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+		
+			<!--stadium-->
+			<container class="title_link_box" force_title_borders="true" id="Clos" priority="3" default_height="180"  hide_view_menu="true" navigation_focus_target="true">
+				<translation id="link_title" translation_id="229366" type="use" value="Stadium" />
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+				<widget class="text" id="NoSt" alignment="centre">
+					<translation id="text" translation_id="436452" type="use" value="Stadium information not available.[COMMENT: line of text saying when we don't have any information on a team's stadium]" />
+					<record id="object_property">
+						<integer id="get_property" value="TsHA" />
+						<integer id="set_property" value="hidn" />
+					</record>
+				</widget>
+
+				<widget class="club_overview_stadium_panel" id="clos">
+					<record id="object_property">
+						<list id="get_properties">
+							<record>
+								<integer id="get_property" value="TsHA" />
+								<integer id="set_property" value="Shwn" />
+								<boolean id="dont_set_object" value="true" />
+							</record>
+							<record>
+								<integer id="get_property" value="objt" />
+								<integer id="set_property" value="Cclu" />
+								<boolean id="dont_set_object" value="true" />
+							</record>
+							<record>
+								<integer id="get_property" value="Tsre" />
+								<integer id="set_property" value="objt" />
+								<boolean id="dont_set_hint" value="true" />
+							</record>
+						</list>
+					</record>
+				</widget>
+			</container>
+			
+			<!--kits-->
+			<container class="main_box" force_title_borders="true" priority="2" default_height="-2">
+				<translation id="title" translation_id="319448" type="use" value="Kits[COMMENT: title for the club kits the club overview panel]" />
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+				<widget class="club_overview_kits_panel" id="cloK">
+					<record id="object_property">
+						<integer id="get_property" value="objt" />
+						<integer id="set_property" value="objt" />
+					</record>
+				</widget>
+			</container>
+		
+			<container>
+			<layout class="arrange_horizontal_attachment" layout="-1,-1" offset="0" />
+			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+			
+
+			<!--财政-->
+				<container class="main_box" default_height="270" minimum_height="300" priority="2"  > 	
+			<layout class="arrange_horizontal_attachment" layout="-1" offset="0" gap="0"/>
+			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" /> 	
+			<container>
+				<translation id="title" translation_id="329952" type="use" value="Finance &amp; Salary[COMMENT: manager snapshot/home: wage &amp; finances summary panel heading]" />
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />			
+				<widget class="finances_short_wage_summary_panel" id="fina">
+					<record id="object_property">
+						<integer id="get_property" value="objt" />
+						<integer id="set_property" value="objt" />
+					</record>
+				</widget>					
+			</container>
+			</container>
+			<!--snapshot selector 2-->
+			
+<container class="main_box" id="at82">
+			<translation id="title" translation_id="247454" type="use" value="Favoured Personnel" />
+			<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_gap="0" />
+			<container class="legend_list_table" id="Cfap">
+				<record id="object_property">
+					<string id="get_property" value="Cfap" />
+				</record>
+				<list id="column_widget_properties">
+					<record indx="0"  navigation_focus_target="false"/>
+				</list>
+			</container>
+		</container>
+			
+			
+			</container>	
+	
+			
+		
+		
+	
+	</container>
+
+	
+
+</panel>

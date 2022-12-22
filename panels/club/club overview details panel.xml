@@ -1,0 +1,371 @@
+<panel>
+	<layout class="arrange_vertical_attachment" layout="200,-2" alignment="bottom,extend" offset="0" />
+	<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+	
+		<!--第1行-->
+		<container>
+			<layout class="arrange_horizontal_attachment" layout="-1,20,-3,20,-1" offset="0" />
+			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+			<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="10" />
+				<!--国籍第一列-->
+				<container>
+						<layout class="arrange_vertical_attachment" layout="-1,-1,-1" offset="0" />
+						<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+						<!--空白-->
+						<container>
+						</container>
+						<!--国籍logo-->
+						<container>
+							<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+							<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+						
+							 <widget class="object_portrait_picture" id="CnaG" image_alignment="centre" scale_picture="true" width="100" kee_aspect_ratio="true" height="75" wants_mouse_events="true" embed_in_frame="true">
+								<layout class="centre_in_parent_attachment" alignment="all" inset="0" embed_in_frame="true" />
+								<record id="object_property" dont_set_hint="true" get_property="PNat" set_property="objt" />
+								<boolean id="scale_picture" value="true" />
+								<boolean id="keep_aspect_ratio" value="true" />
+								<flags id="image_alignment" value="centre" />
+								<record id="object_property">
+									<integer id="get_property" value="Cnat" />
+									<integer id="set_property" value="objt" />
+								</record>
+							</widget>	
+							
+
+						</container>
+
+						<!--训练设施等级-->
+						<container id="YOUT">
+							<layout class="arrange_vertical_attachment" layout="-2,-1" alignment="top" offset="0" gap="1" />
+							<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+							<widget class="label" id="TfcL" spec="text" size="9" multiline="true"  font="label" alignment="centre_x,bottom">
+								<record id="object_property">
+									<integer id="get_property" value="TfcS" />
+									<boolean id="name" value="true" />
+								</record>
+							</widget>
+							<widget class="stars_range_strip" id="CtfSt" height="18" lrge="false" alignment="centre_x,top">
+								<layout class="centre_in_parent_attachment" alignment="horizontal" />
+								<record id="object_property">
+									<integer id="get_property" value="Ctf*" />
+								</record>
+							</widget>
+						</container>
+				</container>
+				
+				<!--左键-->	
+				<widget class="quick_flick_button" id="flkl"  auto_size="all" appearance="tangfu/facezuo2" image_alignment="centre_y" scale_picture="true"  icon_enabled="true" cached="true" step="-1"  >
+
+				<attachment class="get_global_attachment" get_property="stPQ" set_property="click_event" />
+				</widget>
+				
+				<!--俱乐部第二列-->
+				<container class="plain_box" inset="0" offset="0" >
+					   <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+						<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+						<widget class="picture" file="tangfu/clubbg" width="350" keep_aspect_ratio="true" scale_picture="true" image_alignment="centre_x,centre_y"  offset="50" />
+
+						
+						
+						<widget class="picture" id="pict" keep_aspect_ratio="true" image_alignment="centre" scale_picture="true" width="100" height="100">
+							<layout class="stick_to_sides_attachment" alignment="all" inset="30" />
+							<boolean id="keep_aspect_ratio" value="true" />
+							<flags id="image_alignment" value="centre" />
+							<record id="object_property">
+								<integer id="get_property" value="mnpc" />
+							</record>
+						</widget>
+			
+				</container>
+				
+				<!--右键-->
+				<widget class="quick_flick_button" id="flkr"  auto_size="all" appearance="tangfu/faceyou2" image_alignment="centre_y" scale_picture="true" cached="true" step="1"  >
+
+					<attachment class="get_global_attachment" get_property="stNQ" set_property="click_event" />
+				</widget>
+				
+				<!--联赛第三列-->
+				<container>
+					<layout class="arrange_vertical_attachment" layout="-1,-1,-1" offset="0" />
+					<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+						<!--空白-->
+						<container>
+						</container>
+						<!--联赛logo-->
+						<container>
+							<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+							<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+							
+							 <widget class="object_portrait_picture" id="lepi" image_alignment="centre" scale_picture="true" width="100"  wants_mouse_events="true" height="75" embed_in_frame="true">
+								<layout class="centre_in_parent_attachment" alignment="all" inset="0" embed_in_frame="true" />
+								<record id="object_property" dont_set_hint="true" get_property="Pclb" set_property="objt" />
+								<boolean id="scale_picture" value="true" />
+								<boolean id="keep_aspect_ratio" value="true" />
+								<flags id="image_alignment" value="centre" />
+								<record id="object_property">
+									<integer id="get_property" value="Cdiv" />
+									<integer id="set_property" value="objt" />
+								</record>
+							</widget>											
+
+						</container>
+						<!--联赛文字顶格-->
+						<!--青训俱乐部等级-->
+						<container id="YOUT">
+							<layout class="arrange_vertical_attachment" layout="-2,-1" alignment="top" offset="0" gap="1" />
+							<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+							<widget class="label" id="TytL" spec="text" size="9" multiline="true"  font="label" alignment="centre_x,bottom">
+								<record id="object_property">
+									<integer id="get_property" value="TytS" />
+									<boolean id="name" value="true" />
+								</record>
+							</widget>
+							<widget class="stars_range_strip" id="CfcSt" height="18" lrge="false" alignment="centre_x,top">
+								<layout class="centre_in_parent_attachment" alignment="horizontal" />
+								<record id="object_property">
+									<integer id="get_property" value="Cfc*" />
+								</record>
+							</widget>
+						</container>
+				</container>
+		
+		
+		</container>
+		<!--第2行-->
+		<container>
+			<layout class="arrange_vertical_attachment" layout="top,extend" offset="0" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+					<!--队名-->
+				   <widget class="text" id="sect" alignment="centre" size="20" style="semi_bold" multiline="false" height="48" wants_mouse_events="false" dont_give_default_focus="true" font="tfsy_Heavy" colour="yellow" >
+					<record id="object_property">
+						<list id="get_properties">
+							<record>
+								<integer id="get_property" value="titl" />
+								<integer id="set_property" value="text" />
+							</record>
+						</list>
+					</record>
+					</widget>
+			<widget class="horizontal_divider" height="1"  />		
+		 <!--名字下一-->			
+		<container height="38" >
+			<layout class="arrange_horizontal_attachment" layout="-1,-1,-1,-1" offset="0" />
+			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+			<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="10" />
+
+			
+            <!--建立时间-->
+            <container  red_replacement="heng3">
+                <layout class="fit_children_attachment" alignment="vertical,fill" offset="0" gap="0" />
+                <layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0" />
+                <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+                <widget class="label" id="yrfL" spec="text" size="9" alignment="centre_x,bottom" auto_size="vertical" font="label" colour="yellow">
+                    <record id="object_property">
+                        <integer id="get_property" value="Cyfn" />
+                        <boolean id="name" value="true" />
+                    </record>
+                </widget>
+                <widget class="dashed_number_label" spec="text" size="12" id="yrfd" alignment="centre_x,top" auto_size="vertical">
+                    <boolean id="NumF" value="0" />
+                    <record id="object_property">
+                        <integer id="get_property" value="Cyfn" />
+                    </record>
+                </widget>
+            </container>
+			 <!--财政-->
+            <container  red_replacement="heng2">
+                <layout class="fit_children_attachment" alignment="vertical,fill" offset="0" gap="0" />
+                <layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0" />
+                <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+                <widget class="label" id="CfiL" spec="text" size="9" alignment="centre_x,bottom" auto_size="vertical" font="label" colour="yellow">
+                    <record id="object_property">
+                        <integer id="get_property" value="CfiD" />
+                        <boolean id="name" value="true" />
+                    </record>
+                </widget>
+                <widget class="club_finances_description_text" id="CfiV" size="12" alignment="centre_x,top" auto_size="vertical">
+                    <record id="object_property">
+                        <integer id="get_property" value="CfiD" />
+                    </record>
+                </widget>
+            </container>
+
+           
+			
+		   <!--声望-->
+            <container  red_replacement="heng3" id="REPU">
+				<layout class="fit_children_attachment" alignment="vertical,fill" offset="0" gap="0" />
+                <layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0" />
+                <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+                <widget class="label" id="CrsL" spec="text" size="9" multiline="false"  font="label"  alignment="centre_x,bottom" auto_size="vertical" colour="yellow">
+                    <record id="object_property">
+                        <integer id="get_property" value="Crsc" />
+                        <boolean id="name" value="true" />
+                    </record>
+                </widget>
+                <widget class="reputation_label" id="CrsV" spec="text" size="12" alignment="centre_x,top" mode="1" auto_size="vertical">
+                    <record id="object_property">
+                        <integer id="get_property" value="Crsc" />
+                    </record>
+                </widget>
+            </container>
+			
+		   <!--洲际赛-->
+            <container  red_replacement="heng3">
+                <layout class="fit_children_attachment" alignment="vertical,fill" offset="0" gap="0" />
+                <layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0" />
+                <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+                <widget class="label" id="ccoL" spec="text" size="9" multiline="false"  alignment="centre_x,bottom" auto_size="vertical"  font="label" colour="yellow">
+                    <record id="object_property">
+                        <integer id="get_property" value="Ccon" />
+                        <boolean id="name" value="true" />
+                    </record>
+                </widget>
+                <widget class="comp_button" spec="text" multiline="false" size="12" id="ccon" alignment="centre_x,top" auto_size="vertical"  icon_enabled="false">
+                    <record id="object_property">
+                        <integer id="get_property" value="Ccon" />
+                    </record>
+                </widget>
+            </container>
+		</container>	
+		<widget class="horizontal_divider" height="1"  />
+			 <!--名字下二-->
+			<container height="38" >
+			<layout class="arrange_horizontal_attachment" layout="-1,-1,-1,-1" offset="0" />
+			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+			<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="10" />
+           
+		    <!--职业状态-->
+            <container  red_replacement="heng3">
+                <layout class="fit_children_attachment" alignment="vertical,fill" offset="0" gap="0" />
+                <layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0" />
+                <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+                <widget class="label" id="proL" spec="text" size="9" alignment="centre_x,bottom" auto_size="vertical" font="label" colour="yellow" >
+                    <record id="object_property">
+                        <integer id="get_property" value="Cprs" />
+                        <boolean id="name" value="true" />
+                    </record>
+                </widget>
+                <widget class="professional_status_label" spec="text" id="pros" size="12" alignment="centre_x,top" auto_size="vertical">
+                    <record id="object_property">
+                        <integer id="get_property" value="Cprs" />
+                    </record>
+                </widget>
+            </container>
+            <!--季票-->
+            <container  red_replacement="heng2" id="SEAS">
+                <layout class="fit_children_attachment" alignment="vertical,fill" offset="0" gap="0" />
+                <layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0" />
+                <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+                <widget class="label" id="CstL" alignment="centre_x,bottom" spec="text" size="9" font="label"  auto_size="vertical" colour="yellow">
+                    <record id="object_property">
+                        <integer id="get_property" value="Csth" />
+                        <boolean id="name" value="true" />
+                    </record>
+                </widget>
+                <widget class="number_label" id="CstV" alignment="centre_x,top" size="12" auto_size="vertical" colour="white">
+                    <record id="object_property">
+                        <integer id="get_property" value="Csth" />
+                    </record>
+                </widget>
+            </container>
+            <!--估价-->
+            <container  red_replacement="heng2">
+                <layout class="fit_children_attachment" alignment="vertical,fill" offset="0" gap="0" />
+                <layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0" />
+                <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+                <widget class="label" id="CovL" spec="text" size="9" alignment="centre_x,bottom" auto_size="vertical" font="label" colour="yellow">
+                    <record id="object_property">
+                        <integer id="get_property" value="Covv" />
+                        <boolean id="name" value="true" />
+                    </record>
+                </widget>
+                <widget class="cash_cell" format="[%cash#1-short-roundtiny]" id="CovV" size="12" alignment="centre_x,top" auto_size="vertical">
+                    <record id="object_property">
+                        <integer id="get_property" value="Covv" />
+                    </record>
+                </widget>
+            </container>
+			 <!--平均上座-->
+			 <container  red_replacement="heng2">
+                <layout class="fit_children_attachment" alignment="vertical,fill" offset="0" gap="0" />
+                <layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0" />
+                <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+				<widget class="label" id="avaL" spec="text" size="9" alignment="centre_x,bottom" auto_size="vertical" font="label" colour="yellow">
+						<record id="object_property">
+							<integer id="get_property" value="Tava" />
+							<boolean id="name" value="true" />
+						</record>
+					</widget>
+	
+					<widget class="dashed_number_label" spec="text" id="avaV" size="12" alignment="centre_x,top" auto_size="vertical">
+						<record id="object_property">
+							<integer id="get_property" value="Tava" />
+						</record>
+					</widget>
+            </container>										
+        </container>
+		
+		<widget class="horizontal_divider" height="1"  />
+		<!--死敌 -->
+		<container  red_replacement="heng1" id="RIVA" height="45" >
+			<layout class="fit_children_attachment" alignment="vertical,fill" offset="0" gap="5"/>
+			<layout class="arrange_vertical_attachment" alignment="vertical" offset="0" gap="3"/>
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>		
+
+			<record id="object_property">
+				<integer id="get_property" value="TISN"/>
+				<integer id="set_property" value="hidn"/>
+			</record>
+
+			<widget class="label" id="CfmL" spec="text" size="9" alignment="centre_x,top" auto_size="vertical"  colour="yellow">
+				<record id="object_property">
+					<integer id="get_property" value="Cfmr" />
+					<boolean id="name" value="true"/>
+				</record>
+			</widget>
+			<widget class="club_rivalries_list_text" spec="text" id="CfmV" reason="true" alignment="centre_x,bottom" size="11" auto_size="vertical">
+				<record id="object_property">
+					<integer id="get_property" value="Cfmr" />
+				</record>
+			</widget>
+		</container>	
+		
+			<widget class="horizontal_divider" height="1"  />
+	
+
+			
+			
+		
+	
+
+</container>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</panel>

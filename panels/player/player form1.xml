@@ -1,0 +1,67 @@
+<panel save_session_state="true">
+	<translation id="title" translation_id="247581" type="use" value="Player Form Panel" />
+
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+	<!-- Stuff to show when there is no form -->
+	<container id="nofm" hidden="true" navigation_container="true" default_focus="true">
+
+		<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" />
+
+		<!--explanatory text for no form being available-->
+		<widget class="text" id="nost" spec="text" size="large" alignment="centre" hidden="true">
+			<translation id="text" translation_id="342459" type="use" value="Player form information is currently unavailable for this player. Add him to a shortlist to track his form.[COMMENT: Player form; Text displayed when form data is not available. Instructs the user on how to generate the data]" />
+		</widget>
+		<widget class="text" id="nodt" spec="text" size="large" alignment="centre" hidden="true">
+			<translation id="text" translation_id="342781" type="use" value="This player's form is being tracked by the backroom team but no data is available yet.[COMMENT: Player form; Text displayed when form data is not available but the player is on a shortlist and data will be available in the future]" />
+		</widget>
+		<widget class="text" id="nobt" spec="text" size="large" alignment="centre" hidden="true">
+			<translation id="text" translation_id="382400" type="use" value="This player's form is being tracked but no data is available yet.[COMMENT: Player form; Text displayed when form data is not available but the player is on a shortlist and data will be available in the future]" />
+		</widget>
+	</container>
+
+	<container>
+		<layout class="arrange_vertical_attachment" alignment="bottom,extend" offset="0" />
+		<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+		<!-- Actual data panel -->
+		<container class="main_box" id="titl" navigation_container="true">
+			<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+			<!--This box contains the two popups-->
+			<container embed_in_frame="true">
+      			<attachment_group class="title_embedded_panel_right" horizontal_offset="0" vertical_inset="0"/>
+
+				<container class="embedded_popup_button" id="ptea" auto_tick_exclusive="true" embed_in_frame="true" save_session_state="true" fixed="false" auto_size="vertical">
+					<translation id="text" translation_id="243480" type="use" value="Team[COMMENT - team menu text for player form section]" />
+					<flags id="appearance" value="buttons/subtle/normal/button" />
+					<flags id="auto_size" value="all" />
+				</container>
+
+				<container class="embedded_popup_button" id="pcom" auto_tick_exclusive="true" embed_in_frame="true" save_session_state="true" fixed="false" auto_size="vertical">
+					<translation id="text" translation_id="243481" type="use" value="Competition[COMMENT - competition menu text for player form section]" />
+					<flags id="appearance" value="buttons/subtle/normal/button" />
+					<flags id="auto_size" value="all" />
+				</container>
+			</container>
+
+			<container id="pfot">
+				<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0">
+					<global id="gap" name="ui.main_contrast_box_gap"/>
+				</layout>
+				<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+				<!-- group box containing graph and summary-->
+				<widget class="player_form_summary_panel" id="pfSm1" file="player form summary panel1" height="220" />
+
+				
+			</container>
+
+
+		</container>
+
+		<widget class="player_stats_panel" id="pstp" should_show_overall_last="true" navigation_container="true" default_focus="true">
+			<global id="hidden" name="ui.is_fmt_console_skin"/>
+		</widget>
+	</container>
+</panel>

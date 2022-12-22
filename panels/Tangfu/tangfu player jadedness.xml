@@ -1,0 +1,57 @@
+<panel>
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+		<boolean id="should_force_refresh" value="true"/>
+		
+		
+		
+
+		
+		
+		
+		
+			<container>
+	<layout class="arrange_horizontal_attachment" layout="26,-1" offset="0" gap="5" />
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+		
+			<!-- 疲劳状态 -->
+	<widget class="value_based_picture" id="ca2" scale_picture="true" width="26" transparency="1">
+		<layout class="stick_to_sides_attachment" alignment="left" inset="0"/>
+		
+		<list id="value_list">
+			<record value="-"  file=""/>
+			<record min_value="-500" max_value="-401" file="tangfu/pilao/1"/>
+			<record min_value="-400" max_value="-201" file="tangfu/pilao/2"/>
+			<record min_value="-200" max_value="-1" file="tangfu/pilao/3"/>
+			<record min_value="0" max_value="299" file="tangfu/pilao/4"/>
+			<record min_value="300" max_value="499" file="tangfu/pilao/5"/>
+			<record min_value="500" max_value="799" file="tangfu/pilao/6"/>	
+			<record min_value="800" max_value="1000" file="tangfu/pilao/7"/>	
+		</list>
+		<record id="object_property">			
+			<integer id="get_property" value="Pjad" />
+			
+		</record>
+	</widget>
+		
+	
+		
+		
+		
+		<widget class="player_jadedness_widget"  alignment="left,centre_y">
+					<symbol id="class" value="label" />
+					<flags id="edit_event" value="CDBd" />
+					<integer id="min_value" value="-500" />
+					<integer id="max_value" value="1000" />
+					<integer id="style" value="bold" />
+					<integer id="size" value="20" />	
+						<record id="object_property">
+							<integer id="get_property" value="Pjad" />
+						</record>
+				</widget>	
+
+
+</container>
+
+
+
+</panel>

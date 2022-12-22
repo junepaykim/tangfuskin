@@ -1,0 +1,646 @@
+<panel>
+	<layout class="arrange_vertical_attachment" layout="-1,-1,-1,-1" offset="0" gap="0"   />
+	<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+	
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+	<!--1-->	
+	<container>
+		<layout class="arrange_horizontal_attachment" layout="-1,-1,-1,-1" offset="0" gap="0" />
+		<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+            
+				<!-- RCA -->
+				<container>
+					<layout class="arrange_vertical_attachment" layout="30,20" offset="0" gap="0"/>
+					<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+					
+					<widget class="label" size="13" style="bold" alignment="centre_x,bottom" colour="white">
+						<record id="object_property">
+							<integer id="get_property" value="PRCA" />
+						</record>
+					</widget>
+
+					<widget class="label" font="semibold" size="8" colour="white" alignment="centre_x" auto_size="vertical">
+						<translation id="text" translation_id="349063" type="use" value="RCA"/>
+						<translation id="hint" translation_id="349114" type="use" value="The Current Ability level recommended based on player attributes set[COMMENT: player edit panel]" />
+					</widget>
+					
+				</container>
+
+				<!-- CA -->
+				<container>
+					<layout class="arrange_vertical_attachment" layout="30,20" offset="0" gap="0"/>
+					<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+					
+					<widget class="editable_client_object_property_panel" size="13" style="bold" alignment="centre_x,bottom"  colour="white">
+					<record id="object_property">
+						<integer id="get_property" value="PCAB" />
+					</record>
+					</widget>					
+					
+					<widget class="label" font="semibold" size="8" colour="white" alignment="centre_x,top" auto_size="vertical">
+						<translation id="text" translation_id="252139" type="use" value="CA"/>
+						<translation id="hint" translation_id="310135" type="use" value="Current Ability[COMMENT: contract offer screen - comments table]" />
+					</widget>				
+				</container>
+
+				<!-- PA -->
+				<container>
+					<layout class="arrange_vertical_attachment" layout="30,20" offset="0" gap="0"/>
+					<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+					
+					<widget class="editable_client_object_property_panel" size="13" style="bold" alignment="centre_x,bottom"  colour="white">						
+						<record id="object_property">
+							<integer id="get_property" value="PPAB" />
+						</record>
+					</widget>
+
+					<widget class="label" font="semibold" size="8" colour="white" alignment="centre_x,top" auto_size="vertical">
+						<translation id="text" translation_id="252141" type="use" value="PA"/>
+						<translation id="hint" translation_id="310136" type="use" value="Potential Ability[COMMENT: contract offer screen - comments table]" />
+					</widget>
+
+				</container>
+
+				<!-- 挂牌 -->
+				<container>
+					<layout class="arrange_vertical_attachment" layout="30,20" offset="0" gap="0"/>
+					<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+					
+					<widget class="editable_client_object_property_panel" size="13" style="bold" alignment="centre_x,bottom"  colour="white">						
+						<record id="object_property">
+							<integer id="get_property" value="Pnar" />
+						</record>
+					</widget>
+
+					<widget class="label" font="semibold" size="8" colour="white" alignment="centre_x,top" auto_size="vertical">
+						<translation id="text" translation_id="361052" type="use" value="AP[COMMENT - person list view column heading; short for Asking Price]" />
+				<translation id="hint" translation_id="227778" type="use" value="Asking Price" />
+					</widget>
+
+				</container>									
+			
+
+			
+
+		</container>	
+	
+	<!--2-->		
+	<container>
+		<layout class="arrange_horizontal_attachment" layout="-1,-1,-1,-1" offset="0" gap="0" />
+		<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+	
+	<!--适应性-->
+	<container>
+		<layout class="arrange_vertical_attachment" layout="24,20" offset="0" gap="2"/>
+		<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+		<widget class="value_based_picture" id="Pada" scale_picture="true" transparency="1">
+			<translation id="hint" translation_id="227943" type="use" value="Adaptability" />
+				<list id="value_list">
+					<record value="1" file="icons/custom/hidden/positive/101"/>
+					<record value="2" file="icons/custom/hidden/positive/102"/>
+					<record value="3" file="icons/custom/hidden/positive/103"/>
+					<record value="4" file="icons/custom/hidden/positive/104"/>
+					<record value="5" file="icons/custom/hidden/positive/105"/>
+					<record value="6" file="icons/custom/hidden/positive/106"/>
+					<record value="7" file="icons/custom/hidden/positive/107"/>
+					<record value="8" file="icons/custom/hidden/positive/108"/>
+					<record value="9" file="icons/custom/hidden/positive/109"/>
+					<record value="10" file="icons/custom/hidden/positive/110"/>
+					<record value="11" file="icons/custom/hidden/positive/111"/>
+					<record value="12" file="icons/custom/hidden/positive/112"/>
+					<record value="13" file="icons/custom/hidden/positive/113"/>
+					<record value="14" file="icons/custom/hidden/positive/114"/>
+					<record value="15" file="icons/custom/hidden/positive/115"/>
+					<record value="16" file="icons/custom/hidden/positive/116"/>
+					<record value="17" file="icons/custom/hidden/positive/117"/>
+					<record value="18" file="icons/custom/hidden/positive/118"/>
+					<record value="19" file="icons/custom/hidden/positive/119"/>
+					<record value="20" file="icons/custom/hidden/positive/120"/>
+				</list>						
+			<record id="object_property">
+				<integer id="get_property" value="Pada" />
+			</record>
+		</widget>
+
+		<widget class="label" font="semibold" size="8"  colour="white" alignment="centre_x,top, can_scale" auto_size="vertical">
+			<translation id="text" translation_id="227943" type="use" value="Adaptability" />
+		</widget>
+
+	</container>
+	
+	
+	<!--雄心-->
+	<container>
+		<layout class="arrange_vertical_attachment" layout="24,20" offset="0" gap="2"/>
+		<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+		<widget class="value_based_picture" id="Pamb" scale_picture="true" transparency="1">
+			<translation id="hint" translation_id="293412" type="use" value="Ambition" />
+				<list id="value_list">
+					<record value="1" file="icons/custom/hidden/positive/101"/>
+					<record value="2" file="icons/custom/hidden/positive/102"/>
+					<record value="3" file="icons/custom/hidden/positive/103"/>
+					<record value="4" file="icons/custom/hidden/positive/104"/>
+					<record value="5" file="icons/custom/hidden/positive/105"/>
+					<record value="6" file="icons/custom/hidden/positive/106"/>
+					<record value="7" file="icons/custom/hidden/positive/107"/>
+					<record value="8" file="icons/custom/hidden/positive/108"/>
+					<record value="9" file="icons/custom/hidden/positive/109"/>
+					<record value="10" file="icons/custom/hidden/positive/110"/>
+					<record value="11" file="icons/custom/hidden/positive/111"/>
+					<record value="12" file="icons/custom/hidden/positive/112"/>
+					<record value="13" file="icons/custom/hidden/positive/113"/>
+					<record value="14" file="icons/custom/hidden/positive/114"/>
+					<record value="15" file="icons/custom/hidden/positive/115"/>
+					<record value="16" file="icons/custom/hidden/positive/116"/>
+					<record value="17" file="icons/custom/hidden/positive/117"/>
+					<record value="18" file="icons/custom/hidden/positive/118"/>
+					<record value="19" file="icons/custom/hidden/positive/119"/>
+					<record value="20" file="icons/custom/hidden/positive/120"/>
+				</list>						
+			<record id="object_property">
+				<integer id="get_property" value="Pamb" />
+			</record>
+		</widget>
+
+		<widget class="label" font="semibold" size="8"  colour="white" alignment="centre_x,top, can_scale" auto_size="vertical">
+			<translation id="text" translation_id="293412" type="use" value="Ambition" />
+		</widget>
+
+	</container>
+	
+	
+	<!--忠诚-->
+	<container>
+		<layout class="arrange_vertical_attachment" layout="24,20" offset="0" gap="2"/>
+		<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+		<widget class="value_based_picture" id="Ploy" scale_picture="true" transparency="1">
+			<translation id="hint" translation_id="293414" type="use" value="Loyalty" />
+				<list id="value_list">
+					<record value="1" file="icons/custom/hidden/positive/101"/>
+					<record value="2" file="icons/custom/hidden/positive/102"/>
+					<record value="3" file="icons/custom/hidden/positive/103"/>
+					<record value="4" file="icons/custom/hidden/positive/104"/>
+					<record value="5" file="icons/custom/hidden/positive/105"/>
+					<record value="6" file="icons/custom/hidden/positive/106"/>
+					<record value="7" file="icons/custom/hidden/positive/107"/>
+					<record value="8" file="icons/custom/hidden/positive/108"/>
+					<record value="9" file="icons/custom/hidden/positive/109"/>
+					<record value="10" file="icons/custom/hidden/positive/110"/>
+					<record value="11" file="icons/custom/hidden/positive/111"/>
+					<record value="12" file="icons/custom/hidden/positive/112"/>
+					<record value="13" file="icons/custom/hidden/positive/113"/>
+					<record value="14" file="icons/custom/hidden/positive/114"/>
+					<record value="15" file="icons/custom/hidden/positive/115"/>
+					<record value="16" file="icons/custom/hidden/positive/116"/>
+					<record value="17" file="icons/custom/hidden/positive/117"/>
+					<record value="18" file="icons/custom/hidden/positive/118"/>
+					<record value="19" file="icons/custom/hidden/positive/119"/>
+					<record value="20" file="icons/custom/hidden/positive/120"/>
+				</list>						
+			<record id="object_property">
+				<integer id="get_property" value="Ploy" />
+			</record>
+		</widget>
+
+		<widget class="label" font="semibold" size="8"  colour="white" alignment="centre_x,top, can_scale" auto_size="vertical">
+			<translation id="text" translation_id="293414" type="use" value="Loyalty" />
+		</widget>
+
+	</container>
+
+	<!--抗压-->
+	<container>
+		<layout class="arrange_vertical_attachment" layout="24,20" offset="0" gap="2"/>
+		<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+		<widget class="value_based_picture" id="Ppre" scale_picture="true" transparency="1">
+			<translation id="hint" translation_id="293329" type="use" value="Pressure" />
+				<list id="value_list">
+					<record value="1" file="icons/custom/hidden/positive/101"/>
+					<record value="2" file="icons/custom/hidden/positive/102"/>
+					<record value="3" file="icons/custom/hidden/positive/103"/>
+					<record value="4" file="icons/custom/hidden/positive/104"/>
+					<record value="5" file="icons/custom/hidden/positive/105"/>
+					<record value="6" file="icons/custom/hidden/positive/106"/>
+					<record value="7" file="icons/custom/hidden/positive/107"/>
+					<record value="8" file="icons/custom/hidden/positive/108"/>
+					<record value="9" file="icons/custom/hidden/positive/109"/>
+					<record value="10" file="icons/custom/hidden/positive/110"/>
+					<record value="11" file="icons/custom/hidden/positive/111"/>
+					<record value="12" file="icons/custom/hidden/positive/112"/>
+					<record value="13" file="icons/custom/hidden/positive/113"/>
+					<record value="14" file="icons/custom/hidden/positive/114"/>
+					<record value="15" file="icons/custom/hidden/positive/115"/>
+					<record value="16" file="icons/custom/hidden/positive/116"/>
+					<record value="17" file="icons/custom/hidden/positive/117"/>
+					<record value="18" file="icons/custom/hidden/positive/118"/>
+					<record value="19" file="icons/custom/hidden/positive/119"/>
+					<record value="20" file="icons/custom/hidden/positive/120"/>
+				</list>						
+			<record id="object_property">
+				<integer id="get_property" value="Ppre" />
+			</record>
+		</widget>
+
+		<widget class="label" font="semibold" size="8"  colour="white" alignment="centre_x,top, can_scale" auto_size="vertical">
+			<translation id="text" translation_id="293329" type="use" value="Pressure" />
+		</widget>
+
+	</container>
+
+	
+	
+	
+	</container>
+
+
+	
+	<!--3-->
+	<container>
+		<layout class="arrange_horizontal_attachment" layout="-1,-1,-1,-1" offset="0" gap="0" />
+		<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+		
+		<!--职业-->
+	<container>
+		<layout class="arrange_vertical_attachment" layout="24,20" offset="0" gap="2"/>
+		<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+		<widget class="value_based_picture" id="Ppro" scale_picture="true" transparency="1">
+			<translation id="hint" translation_id="293415" type="use" value="Professionalism" /> 
+				<list id="value_list">
+					<record value="1" file="icons/custom/hidden/positive/101"/>
+					<record value="2" file="icons/custom/hidden/positive/102"/>
+					<record value="3" file="icons/custom/hidden/positive/103"/>
+					<record value="4" file="icons/custom/hidden/positive/104"/>
+					<record value="5" file="icons/custom/hidden/positive/105"/>
+					<record value="6" file="icons/custom/hidden/positive/106"/>
+					<record value="7" file="icons/custom/hidden/positive/107"/>
+					<record value="8" file="icons/custom/hidden/positive/108"/>
+					<record value="9" file="icons/custom/hidden/positive/109"/>
+					<record value="10" file="icons/custom/hidden/positive/110"/>
+					<record value="11" file="icons/custom/hidden/positive/111"/>
+					<record value="12" file="icons/custom/hidden/positive/112"/>
+					<record value="13" file="icons/custom/hidden/positive/113"/>
+					<record value="14" file="icons/custom/hidden/positive/114"/>
+					<record value="15" file="icons/custom/hidden/positive/115"/>
+					<record value="16" file="icons/custom/hidden/positive/116"/>
+					<record value="17" file="icons/custom/hidden/positive/117"/>
+					<record value="18" file="icons/custom/hidden/positive/118"/>
+					<record value="19" file="icons/custom/hidden/positive/119"/>
+					<record value="20" file="icons/custom/hidden/positive/120"/>
+				</list>						
+			<record id="object_property">
+				<integer id="get_property" value="Ppro" />
+			</record>
+		</widget>
+
+		<widget class="label" font="semibold" size="8"  colour="white" alignment="centre_x,top, can_scale" auto_size="vertical">
+			<translation id="text" translation_id="293415" type="use" value="Professionalism" /> 
+		</widget>
+
+	</container>
+	
+	<!--体育精神-->
+	<container>
+		<layout class="arrange_vertical_attachment" layout="24,20" offset="0" gap="2"/>
+		<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+		<widget class="value_based_picture" id="Pspo" scale_picture="true" transparency="1">
+			<translation id="hint" translation_id="293416" type="use" value="Sportsmanship" />
+				<list id="value_list">
+					<record value="1" file="icons/custom/hidden/positive/101"/>
+					<record value="2" file="icons/custom/hidden/positive/102"/>
+					<record value="3" file="icons/custom/hidden/positive/103"/>
+					<record value="4" file="icons/custom/hidden/positive/104"/>
+					<record value="5" file="icons/custom/hidden/positive/105"/>
+					<record value="6" file="icons/custom/hidden/positive/106"/>
+					<record value="7" file="icons/custom/hidden/positive/107"/>
+					<record value="8" file="icons/custom/hidden/positive/108"/>
+					<record value="9" file="icons/custom/hidden/positive/109"/>
+					<record value="10" file="icons/custom/hidden/positive/110"/>
+					<record value="11" file="icons/custom/hidden/positive/111"/>
+					<record value="12" file="icons/custom/hidden/positive/112"/>
+					<record value="13" file="icons/custom/hidden/positive/113"/>
+					<record value="14" file="icons/custom/hidden/positive/114"/>
+					<record value="15" file="icons/custom/hidden/positive/115"/>
+					<record value="16" file="icons/custom/hidden/positive/116"/>
+					<record value="17" file="icons/custom/hidden/positive/117"/>
+					<record value="18" file="icons/custom/hidden/positive/118"/>
+					<record value="19" file="icons/custom/hidden/positive/119"/>
+					<record value="20" file="icons/custom/hidden/positive/120"/>
+				</list>						
+			<record id="object_property">
+				<integer id="get_property" value="Pspo" />
+			</record>
+		</widget>
+
+		<widget class="label" font="semibold" size="8"  colour="white" alignment="centre_x,top, can_scale" auto_size="vertical">
+			<translation id="text" translation_id="293416" type="use" value="Sportsmanship" />
+		</widget>
+
+	</container>	
+	
+	<!--情绪控制-->
+	<container>
+		<layout class="arrange_vertical_attachment" layout="24,20" offset="0" gap="2"/>
+		<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+		<widget class="value_based_picture" id="Ptem" scale_picture="true" transparency="1">
+			<translation id="hint" translation_id="349110" type="use" value="Temperament[COMMENT: how good a person is at keeping their temper]" />
+				<list id="value_list">
+					<record value="1" file="icons/custom/hidden/positive/101"/>
+					<record value="2" file="icons/custom/hidden/positive/102"/>
+					<record value="3" file="icons/custom/hidden/positive/103"/>
+					<record value="4" file="icons/custom/hidden/positive/104"/>
+					<record value="5" file="icons/custom/hidden/positive/105"/>
+					<record value="6" file="icons/custom/hidden/positive/106"/>
+					<record value="7" file="icons/custom/hidden/positive/107"/>
+					<record value="8" file="icons/custom/hidden/positive/108"/>
+					<record value="9" file="icons/custom/hidden/positive/109"/>
+					<record value="10" file="icons/custom/hidden/positive/110"/>
+					<record value="11" file="icons/custom/hidden/positive/111"/>
+					<record value="12" file="icons/custom/hidden/positive/112"/>
+					<record value="13" file="icons/custom/hidden/positive/113"/>
+					<record value="14" file="icons/custom/hidden/positive/114"/>
+					<record value="15" file="icons/custom/hidden/positive/115"/>
+					<record value="16" file="icons/custom/hidden/positive/116"/>
+					<record value="17" file="icons/custom/hidden/positive/117"/>
+					<record value="18" file="icons/custom/hidden/positive/118"/>
+					<record value="19" file="icons/custom/hidden/positive/119"/>
+					<record value="20" file="icons/custom/hidden/positive/120"/>
+				</list>						
+			<record id="object_property">
+				<integer id="get_property" value="Ptem" />
+			</record>
+		</widget>
+
+		<widget class="label" font="semibold" size="8"  colour="white" alignment="centre_x,top, can_scale" auto_size="vertical">
+			<translation id="text" translation_id="349110" type="use" value="Temperament[COMMENT: how good a person is at keeping their temper]" />
+		</widget>
+
+	</container>
+	
+	<!--争论性-->
+	<container>
+		<layout class="arrange_vertical_attachment" layout="24,20" offset="0" gap="2"/>
+		<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+		<widget class="value_based_picture" id="Pcvy" scale_picture="true" transparency="1">
+			<translation id="hint" translation_id="293413" type="use" value="Controversy" />
+				<list id="value_list">
+					<record value="1" file="icons/custom/hidden/positive/201"/>
+					<record value="2" file="icons/custom/hidden/positive/202"/>
+					<record value="3" file="icons/custom/hidden/positive/203"/>
+					<record value="4" file="icons/custom/hidden/positive/204"/>
+					<record value="5" file="icons/custom/hidden/positive/205"/>
+					<record value="6" file="icons/custom/hidden/positive/206"/>
+					<record value="7" file="icons/custom/hidden/positive/207"/>
+					<record value="8" file="icons/custom/hidden/positive/208"/>
+					<record value="9" file="icons/custom/hidden/positive/209"/>
+					<record value="10" file="icons/custom/hidden/positive/210"/>
+					<record value="11" file="icons/custom/hidden/positive/211"/>
+					<record value="12" file="icons/custom/hidden/positive/212"/>
+					<record value="13" file="icons/custom/hidden/positive/213"/>
+					<record value="14" file="icons/custom/hidden/positive/214"/>
+					<record value="15" file="icons/custom/hidden/positive/215"/>
+					<record value="16" file="icons/custom/hidden/positive/216"/>
+					<record value="17" file="icons/custom/hidden/positive/217"/>
+					<record value="18" file="icons/custom/hidden/positive/218"/>
+					<record value="19" file="icons/custom/hidden/positive/219"/>
+					<record value="20" file="icons/custom/hidden/positive/220"/>
+				</list>						
+			<record id="object_property">
+				<integer id="get_property" value="Pcvy" />
+			</record>
+		</widget>
+
+		<widget class="label" font="semibold" size="8"  colour="white" alignment="centre_x,top, can_scale" auto_size="vertical">
+			<translation id="text" translation_id="293413" type="use" value="Controversy" />
+		</widget>
+
+	</container>
+	
+	
+	
+	
+	</container>
+	
+	
+	
+	<!--4-->
+	<container>
+		<layout class="arrange_horizontal_attachment" layout="-1,-1,-1,-1,-1" offset="0" gap="0" />
+		<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+	
+		<!--稳定-->
+	<container>
+		<layout class="arrange_vertical_attachment" layout="24,20" offset="0" gap="2"/>
+		<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+		<widget class="value_based_picture" id="PCON" scale_picture="true" transparency="1">
+			<translation id="hint" translation_id="361095" type="use" value="Cons[COMMENT: column heading; short for Consistency]" />
+				<list id="value_list">
+					<record value="1" file="icons/custom/hidden/positive/101"/>
+					<record value="2" file="icons/custom/hidden/positive/102"/>
+					<record value="3" file="icons/custom/hidden/positive/103"/>
+					<record value="4" file="icons/custom/hidden/positive/104"/>
+					<record value="5" file="icons/custom/hidden/positive/105"/>
+					<record value="6" file="icons/custom/hidden/positive/106"/>
+					<record value="7" file="icons/custom/hidden/positive/107"/>
+					<record value="8" file="icons/custom/hidden/positive/108"/>
+					<record value="9" file="icons/custom/hidden/positive/109"/>
+					<record value="10" file="icons/custom/hidden/positive/110"/>
+					<record value="11" file="icons/custom/hidden/positive/111"/>
+					<record value="12" file="icons/custom/hidden/positive/112"/>
+					<record value="13" file="icons/custom/hidden/positive/113"/>
+					<record value="14" file="icons/custom/hidden/positive/114"/>
+					<record value="15" file="icons/custom/hidden/positive/115"/>
+					<record value="16" file="icons/custom/hidden/positive/116"/>
+					<record value="17" file="icons/custom/hidden/positive/117"/>
+					<record value="18" file="icons/custom/hidden/positive/118"/>
+					<record value="19" file="icons/custom/hidden/positive/119"/>
+					<record value="20" file="icons/custom/hidden/positive/120"/>
+				</list>						
+			<record id="object_property">
+				<integer id="get_property" value="PCON" />
+			</record>
+		</widget>
+
+		<widget class="label" font="semibold" size="8"  colour="white" alignment="centre_x,top, can_scale" auto_size="vertical">
+			<translation id="text" translation_id="361095" type="use" value="Cons[COMMENT: column heading; short for Consistency]" />
+		</widget>
+
+	</container>
+	
+	<!--肮脏-->
+	<container>
+		<layout class="arrange_vertical_attachment" layout="24,20" offset="0" gap="2"/>
+		<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+		<widget class="value_based_picture" id="Pdir" scale_picture="true" transparency="1">
+			<translation id="hint" translation_id="230007" type="use" value="Dirtiness" />
+				<list id="value_list">
+					<record value="1" file="icons/custom/hidden/positive/201"/>
+					<record value="2" file="icons/custom/hidden/positive/202"/>
+					<record value="3" file="icons/custom/hidden/positive/203"/>
+					<record value="4" file="icons/custom/hidden/positive/204"/>
+					<record value="5" file="icons/custom/hidden/positive/205"/>
+					<record value="6" file="icons/custom/hidden/positive/206"/>
+					<record value="7" file="icons/custom/hidden/positive/207"/>
+					<record value="8" file="icons/custom/hidden/positive/208"/>
+					<record value="9" file="icons/custom/hidden/positive/209"/>
+					<record value="10" file="icons/custom/hidden/positive/210"/>
+					<record value="11" file="icons/custom/hidden/positive/211"/>
+					<record value="12" file="icons/custom/hidden/positive/212"/>
+					<record value="13" file="icons/custom/hidden/positive/213"/>
+					<record value="14" file="icons/custom/hidden/positive/214"/>
+					<record value="15" file="icons/custom/hidden/positive/215"/>
+					<record value="16" file="icons/custom/hidden/positive/216"/>
+					<record value="17" file="icons/custom/hidden/positive/217"/>
+					<record value="18" file="icons/custom/hidden/positive/218"/>
+					<record value="19" file="icons/custom/hidden/positive/219"/>
+					<record value="20" file="icons/custom/hidden/positive/220"/>
+				</list>						
+			<record id="object_property">
+				<integer id="get_property" value="Pdir" />
+			</record>
+		</widget>
+
+		<widget class="label" font="semibold" size="8"  colour="white" alignment="centre_x,top, can_scale" auto_size="vertical">
+			<translation id="text" translation_id="230007" type="use" value="Dirtiness" />
+		</widget>
+
+	</container>
+	
+	<!--大赛发挥-->
+	<container>
+		<layout class="arrange_vertical_attachment" layout="24,20" offset="0" gap="2"/>
+		<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+		<widget class="value_based_picture" id="Pimp" scale_picture="true" transparency="1">
+			<translation id="hint" translation_id="230008" type="use" value="Important Matches" />
+				<list id="value_list">
+					<record value="1" file="icons/custom/hidden/positive/101"/>
+					<record value="2" file="icons/custom/hidden/positive/102"/>
+					<record value="3" file="icons/custom/hidden/positive/103"/>
+					<record value="4" file="icons/custom/hidden/positive/104"/>
+					<record value="5" file="icons/custom/hidden/positive/105"/>
+					<record value="6" file="icons/custom/hidden/positive/106"/>
+					<record value="7" file="icons/custom/hidden/positive/107"/>
+					<record value="8" file="icons/custom/hidden/positive/108"/>
+					<record value="9" file="icons/custom/hidden/positive/109"/>
+					<record value="10" file="icons/custom/hidden/positive/110"/>
+					<record value="11" file="icons/custom/hidden/positive/111"/>
+					<record value="12" file="icons/custom/hidden/positive/112"/>
+					<record value="13" file="icons/custom/hidden/positive/113"/>
+					<record value="14" file="icons/custom/hidden/positive/114"/>
+					<record value="15" file="icons/custom/hidden/positive/115"/>
+					<record value="16" file="icons/custom/hidden/positive/116"/>
+					<record value="17" file="icons/custom/hidden/positive/117"/>
+					<record value="18" file="icons/custom/hidden/positive/118"/>
+					<record value="19" file="icons/custom/hidden/positive/119"/>
+					<record value="20" file="icons/custom/hidden/positive/120"/>
+				</list>						
+			<record id="object_property">
+				<integer id="get_property" value="Pimp" />
+			</record>
+		</widget>
+
+		<widget class="label" font="semibold" size="8"  colour="white" alignment="centre_x,top, can_scale" auto_size="vertical">
+			<translation id="text" type="use" translation_id="230008" value="Important Matches" />
+		</widget>
+
+	</container>
+	
+	<!--受伤倾向-->
+	<container>
+		<layout class="arrange_vertical_attachment" layout="24,20" offset="0" gap="2"/>
+		<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+		<widget class="value_based_picture" id="Pipr" scale_picture="true" transparency="1">
+			<translation id="hint" translation_id="230009" type="use" value="Injury Proneness" />
+				<list id="value_list">
+					<record value="1" file="icons/custom/hidden/positive/201"/>
+					<record value="2" file="icons/custom/hidden/positive/202"/>
+					<record value="3" file="icons/custom/hidden/positive/203"/>
+					<record value="4" file="icons/custom/hidden/positive/204"/>
+					<record value="5" file="icons/custom/hidden/positive/205"/>
+					<record value="6" file="icons/custom/hidden/positive/206"/>
+					<record value="7" file="icons/custom/hidden/positive/207"/>
+					<record value="8" file="icons/custom/hidden/positive/208"/>
+					<record value="9" file="icons/custom/hidden/positive/209"/>
+					<record value="10" file="icons/custom/hidden/positive/210"/>
+					<record value="11" file="icons/custom/hidden/positive/211"/>
+					<record value="12" file="icons/custom/hidden/positive/212"/>
+					<record value="13" file="icons/custom/hidden/positive/213"/>
+					<record value="14" file="icons/custom/hidden/positive/214"/>
+					<record value="15" file="icons/custom/hidden/positive/215"/>
+					<record value="16" file="icons/custom/hidden/positive/216"/>
+					<record value="17" file="icons/custom/hidden/positive/217"/>
+					<record value="18" file="icons/custom/hidden/positive/218"/>
+					<record value="19" file="icons/custom/hidden/positive/219"/>
+					<record value="20" file="icons/custom/hidden/positive/220"/>
+				</list>						
+			<record id="object_property">
+				<integer id="get_property" value="Pipr" />
+			</record>
+		</widget>
+
+		<widget class="label" font="semibold" size="8"  colour="white" alignment="centre_x,top, can_scale" auto_size="vertical">
+			<translation id="text" translation_id="230009" type="use" value="Injury Proneness" />
+		</widget>
+
+	</container>
+	
+	<!--多面性-->
+	<container>
+		<layout class="arrange_vertical_attachment" layout="24,20" offset="0" gap="2"/>
+		<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+		<widget class="value_based_picture" id="Pver" scale_picture="true" transparency="1">
+			<translation id="hint" translation_id="230011" type="use" value="Versatility" />
+				<list id="value_list">
+					<record value="1" file="icons/custom/hidden/positive/101"/>
+					<record value="2" file="icons/custom/hidden/positive/102"/>
+					<record value="3" file="icons/custom/hidden/positive/103"/>
+					<record value="4" file="icons/custom/hidden/positive/104"/>
+					<record value="5" file="icons/custom/hidden/positive/105"/>
+					<record value="6" file="icons/custom/hidden/positive/106"/>
+					<record value="7" file="icons/custom/hidden/positive/107"/>
+					<record value="8" file="icons/custom/hidden/positive/108"/>
+					<record value="9" file="icons/custom/hidden/positive/109"/>
+					<record value="10" file="icons/custom/hidden/positive/110"/>
+					<record value="11" file="icons/custom/hidden/positive/111"/>
+					<record value="12" file="icons/custom/hidden/positive/112"/>
+					<record value="13" file="icons/custom/hidden/positive/113"/>
+					<record value="14" file="icons/custom/hidden/positive/114"/>
+					<record value="15" file="icons/custom/hidden/positive/115"/>
+					<record value="16" file="icons/custom/hidden/positive/116"/>
+					<record value="17" file="icons/custom/hidden/positive/117"/>
+					<record value="18" file="icons/custom/hidden/positive/118"/>
+					<record value="19" file="icons/custom/hidden/positive/119"/>
+					<record value="20" file="icons/custom/hidden/positive/120"/>
+				</list>						
+			<record id="object_property">
+				<integer id="get_property" value="Pver" />
+			</record>
+		</widget>
+
+		<widget class="label" font="semibold" size="8"  colour="white" alignment="centre_x,top, can_scale" auto_size="vertical">
+			<translation id="text" translation_id="230011" type="use" value="Versatility" />
+		</widget>
+
+	</container>
+	
+	
+	
+	
+	</container>
+	
+	
+	
+	
+</panel>

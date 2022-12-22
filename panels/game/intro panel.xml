@@ -1,0 +1,292 @@
+<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+
+	<!-- Handheld background image -->
+	<widget class="picture" id="bkg1" file="main menu/background" scale_picture="true" keep_aspect_ratio="false">
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+
+		<global id="shown" name="platform_is_handheld" />
+	</widget>
+
+	<!-- Switch background image -->
+	<widget class="picture" id="bkg2" file="main menu/background" scale_picture="true" keep_aspect_ratio="false">
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+
+		<global id="shown" name="platform_is_switch" />
+	</widget>
+
+	<!-- 3D manager and scene -->
+	<container class="add_manager_panel" id="adMP" file="none" manager_appearance_side="left">
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+
+		<global id="hidden" name="platform_is_switch" />
+
+		<container id="CHWc">
+			<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+		</container>
+		
+		<!-- Overlay over the top of manager BG -->
+          <widget class="picture" id="bkg1" file="main menu/background/beijing" scale_picture="true" keep_aspect_ratio="false">
+            <layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+
+        </widget> 
+
+		<container>
+			<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+			<!-- Edit manager appearance - a wizard panel to provide standard wizard buttons and panel handling -->
+			<container class="wizard_panel" id="wzrd" hidden="true">
+
+				<layout class="arrange_horizontal_attachment" layout="-40,-60" offset="10" gap="0" />
+				<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="10" />
+
+				<container id="emCW" file="game/manager man buttons">
+				</container>
+
+				<container id="mWiC" class="main_transparent_box">
+					<layout class="arrange_vertical_attachment" alignment="bottom,extend" offset="0" gap="0" />
+					<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+					<!-- wizard panel container, the actual panels will be added here -->
+					<container id="plco">
+						<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+						<container class="manager_profile_panel" id="fPan" check_profile="true" hide_manager="true">
+							<translation id="wizard_panel_title" translation_id="292599" type="use" value="Personal Details[COMMENT: add manager screen; panel title]" />
+						</container>
+						<container class="manager_profile_panel" id="sPan" check_profile="true" file="human/add manager appearance panel" manager_appearance_side="left" hidden="true">
+							<translation id="wizard_panel_title" translation_id="395141" type="use" value="Appearance[COMMENT: add manager screen; panel title; appearance of the manager]" />
+						</container>
+
+					</container>
+
+					<!-- row of buttons -->
+					<container class="main_box" height="60" navigation_container="true">
+						<layout class="arrange_horizontal_attachment" alignment="middle" offset="0" />
+						<layout class="stick_to_sides_attachment" alignment="top" apply_to_children="true" inset="0" />
+
+						<!-- row of buttons -->
+						<container id="btns" height="40" width="500">
+							<layout class="arrange_horizontal_attachment" alignment="right,extend" offset="0" gap="0" />
+
+
+							<container height="30">
+								<layout class="arrange_horizontal_attachment" alignment="left" offset="0" gap="0" />
+								<layout class="stick_to_sides_attachment" alignment="bottom" inset="0" apply_to_children="true" />
+								<layout class="centre_in_parent_attachment" alignment="vertical" />
+
+								<widget class="icon_button" id="ltEr" hidden="true" click_event="cPrL" auto_size="all" controller_button="b_button">
+									<translation id="text" translation_id="424577" type="use" value="Later[COMMENT: wizard dialog: default previous button text]" />
+								</widget>
+
+							</container>
+
+							<widget class="icon_button" id="prev" click_event="prpa" auto_size="all" icon="icons/16px/left">
+								<layout class="centre_in_parent_attachment" alignment="vertical" />
+								<translation id="text" translation_id="496359" type="use" value="Previous[COMMENT: AREA: UI Navigation; SUB-AREA: Move Between Screens; FR-BN: n/a; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: go to previous screen, bespoke version needed for some languages]" />
+							</widget>
+							<widget class="primary_icon_button" id="nxt1" click_event="n1pa" auto_size="all" icon="icons/16px/right" icon_alignment="right" controller_button="right_trigger">
+								<layout class="centre_in_parent_attachment" alignment="vertical" />
+								<translation id="text" translation_id="496360" type="use" value="Next[COMMENT: AREA: UI Navigation; SUB-AREA: Move Between Screens; FR-BN: n/a; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: go to next screen, bespoke version needed for some languages]" />
+							</widget>
+							<widget class="primary_icon_tick_button" id="fini" click_event="fNPr" hidden="true" controller_button="y_button">
+								<layout class="centre_in_parent_attachment" alignment="vertical" />
+								<translation id="text" translation_id="229918" type="use" value="Confirm" />
+							</widget>
+
+						</container>
+
+						<container id="sVgm" height="40" width="500" hidden="true">
+
+							<widget class="icon_button" click_event="cMEa" auto_size="all" controller_button="b_button">
+								<layout class="centre_in_parent_attachment" alignment="vertical" />
+								<layout class="stick_to_sides_attachment" alignment="left" inset="0" />
+								<translation id="text" translation_id="229828" type="use" value="Cancel" />
+							</widget>
+
+							<widget class="primary_icon_tick_button" click_event="cMNf" controller_button="y_button">
+								<layout class="centre_in_parent_attachment" alignment="vertical" />
+								<layout class="stick_to_sides_attachment" alignment="right" inset="0" />
+								<translation id="text" translation_id="229918" type="use" value="Confirm" />
+							</widget>
+
+						</container>
+
+					</container>
+				</container>
+
+			</container>
+
+		</container>
+	</container>
+
+	<container id="mIco">
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" layout_children="true" />
+
+		<container>
+			<attachment_group class="horizontal_arrange_vertical_centre" horizontal_alignment="right" />
+			<layout class="stick_to_sides_attachment" alignment="all" inset="-175" />
+<!-- Menu -->
+			<container class="main_contrast_box" id="mPic" width="500" appearance="boxes/custom/main menu/paper" >
+				<layout class="centre_in_parent_attachment" alignment="vertical" offset="0" apply_to_children="true" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="37" />
+
+				<!-- Change the size of the box for switch -->
+				<attachment class="test_screen_size_attachment" skip_if_false="true">
+					<list id="properties">
+						<record>
+							<flags id="alignment" value="vertical" />
+							<integer id="min_value" value="0" />
+							<integer id="max_value" value="720" />
+							<!-- This is a very large value as we want our widget to show if > the min_value.  The attachmen itself only does values between a range so we set the max arbitrarily high to make this work -->
+							<symbol id="set_property" value="height" />
+							<integer id="true_value" value="570" />
+						</record>
+						<record min_value="721" max_value="10000" true_value="670" />
+					</list>
+				</attachment>
+				
+				<container file="game/intro panel menu" navigation_container="true" default_focus="true"/>
+				
+				<!-- version label-->
+				<widget class="text" id="vers" auto_size="all" colour="fg alpha" size="small">
+					<layout class="stick_to_sides_attachment" alignment="left,bottom" inset="20,20" />
+				</widget>
+
+				<!-- Quit -->
+				<container navigation_container="true">
+					<layout class="arrange_horizontal_attachment" alignment="right" offset="4" gap="5" />
+					<layout class="stick_to_sides_attachment" alignment="right" inset="15" />
+					<layout class="stick_to_sides_attachment" alignment="bottom" inset="15" />
+					<layout class="fit_children_attachment" alignment="vertical" offset="4" />
+					<layout class="fit_children_attachment" alignment="horizontal,fill" offset="4" />
+
+					<!-- Add to Wishlist -->
+					<widget class="subtle_button" id="wish" click_event="wish" auto_size="all" appearance="buttons/subtle/flex/button">
+						<string id="create_if" value="is_demo_mode_and_steam" />
+						<translation id="text" translation_id="532237" type="use" value="Add to Wishlist[COMMENT: AREA: start screen; FR: 35432 TONE: Formal; CHARLIMIT: None; NOTE: used in demo mode only to open url link to add game to users wishlist;]" />
+						<layout class="centre_in_parent_attachment" alignment="vertical" offset="0" />
+					</widget>
+
+					<!-- exit button -->
+					<widget class="subtle_button" id="qttx" auto_size="all" appearance="buttons/subtle/flex/button">
+						<translation id="text" translation_id="248058" type="use" value="Quit" />
+						<translation id="hint" translation_id="255120" type="use" value="Choose this option to exit [%string#1 - current name of game, e.g. FM2007] and return to the real world...[COMMENT - hint text for button to exit game]" />
+						<layout class="centre_in_parent_attachment" alignment="vertical" offset="0" />
+						<record id="click_event">
+							<flags id="event_id" value="QUIT" />
+							<flags id="event_target" value="scrC" />
+						</record>
+					</widget>
+				</container>
+			</container>			<!-- Spacer to inset menu from right side of screen -->
+			<container height="100">
+				<attachment class="test_screen_size_attachment" skip_if_false="true">
+					<list id="properties">
+						<record>
+							<flags id="alignment" value="horizontal" />
+							<integer id="min_value" value="0" />
+							<integer id="max_value" value="1299" />
+
+							<symbol id="set_property" value="width" />
+							<integer id="true_value" value="80" />
+							<integer id="false_value" value="90" />
+						</record>
+						<record>
+							<flags id="alignment" value="horizontal" />
+							<integer id="min_value" value="1300" />
+							<integer id="max_value" value="1600" />
+
+							<symbol id="set_property" value="width" />
+							<integer id="true_value" value="180" />
+							<integer id="false_value" value="190" />
+						</record>
+						<record>
+							<flags id="alignment" value="horizontal" />
+							<integer id="min_value" value="1601" />
+							<integer id="max_value" value="1900" />
+
+							<symbol id="set_property" value="width" />
+							<integer id="true_value" value="300" />
+							<integer id="false_value" value="310" />
+						</record>
+						<record>
+							<flags id="alignment" value="horizontal" />
+							<integer id="min_value" value="1901" />
+							<integer id="max_value" value="10000" />
+
+							<symbol id="set_property" value="width" />
+							<integer id="true_value" value="360" />
+							<integer id="false_value" value="370" />
+						</record>
+					</list>
+				</attachment>
+			</container>
+
+		</container>
+
+		<!-- Edit appearance button-->
+		<container class="icon_button" id="reeB" auto_size="all" icon="icons/16px/manager" controller_button="x_button">
+			<translation id="text" translation_id="229690" type="use" value="Edit" />
+			<layout class="stick_to_sides_attachment" alignment="bottom, left" inset="10" />
+			<record id="click_event" event_id="eMnG" />
+
+			<global id="hidden" name="platform_is_handheld" />
+		</container>
+
+		<!-- Switch user button for xbox -->
+		<container class="main_transparent_box_no_margin" height="60" width="300">
+			<attachment_group class="horizontal_arrange" horizontal_gap="20" horizontal_offset="6" />
+			<layout class="stick_to_sides_attachment" alignment="top, left" inset="10" />
+
+			<global id="shown" name="game_mode_is_console_mode" />
+
+			<!--Profile Picture-->
+			<container height="40" width="40">
+				<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+				<widget class="picture" id="xbGC" file="icons/16px/goal" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true" />
+			</container>
+
+			<!-- Button Text -->
+			<container width="210">
+				<attachment_group class="vertical_arrange_autosize" vertical_offset="10" vertical_gap="4" />
+
+				<!-- User Name -->
+				<widget class="label" id="xbGT" auto_size="all" alignment="left, centre_y" style="bold" size="large" height="30" colour="text">
+					<translation id="text" translation_id="516557" type="use" value="Xbox User[COMMENT: AREA: intro panel; NOTE: label for identifying user]" />
+				</widget>
+
+				<widget class="label" auto_size="all" colour="fg alpha" size="small">
+					<translation id="text" translation_id="516558" type="use" value="Switch Profile[COMMENT: AREA: intro panel; NOTE: label for switching user profile on console]" />
+				</widget>
+
+			</container>
+
+			<!-- Button (spans across entire parent container) -->
+			<widget class="icon_button" appearance="buttons/custom/intro panel/button" focus_appearance="buttons/subtle/flex/button_controller" controller_button="y_button">
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+				<record id="click_event" event_id="xbCP" />
+			</widget>
+		</container>
+	</container>
+
+
+	<!-- when visible, this panel will cover the movie test panel and take mouse/key events -->
+	<!-- this is visible by default, otherwise the client object system re-applies the 'hidden=true' property when it sets up sections, which may happen before the panel should be hidden -->
+	<container class="splash_movie_panel" id="spmp" movie_finish_event="spmf">
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+	</container>
+
+	<container id="wiBK" class="inner_box_no_margin" background_colour="black">
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+		<animation class="fade_animation" trigger_id="hidden" trigger_value="true" start_value="1.0" end_value="0.0" duration="2.0" end_mode="hold_end">
+			<record id="finished_event" event_id="FdIN" event_target="root" event_flags="7" />
+		</animation>
+		<animation class="fade_animation" trigger_start="hiMN" start_value="0.0" end_value="1.0" duration="0.2" end_mode="stop">
+			<record id="finished_event" event_id="fnHI" event_target="root" event_flags="7" />
+		</animation>
+	</container>
+
+</panel>

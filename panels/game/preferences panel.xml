@@ -1,0 +1,104 @@
+﻿<panel>
+	<attachment_group class="vertical_arrange" vertical_layout="-1,150" vertical_gap="-2" />
+	<container class="preferences_all_panel" >
+		<record id="object_property" get_property="objt" set_property="objt" />
+	</container>
+	
+	
+	<container class="inner_titled_box" id="SYPa" rrep="box_background" brep="white">
+		
+		<container embed_in_frame="true" width="30">
+			<layout class="fit_children_attachment" alignment="vertical" offset="0" embed_in_frame="true"/>
+			<layout class="stick_to_sides_attachment" alignment="horizontal,top" inset="0" apply_to_children="true" embed_in_frame="true" />
+			<layout class="stick_to_sides_attachment" alignment="right,top" inset="10,10" embed_in_frame="true" />
+			<widget class="icon_button" id="okct" auto_size="all" icon_alignment="centre" icon="icons/16px/cross" red_replacement="negative" appearance="" click_event="HYSP" embed_in_frame="true">
+				<layout class="stick_to_sides_attachment" alignment="right,top" inset="0" />
+				<attachment class="event_relay_attachment" event_id="HYSP">
+					<record id="action_event">
+						<flags id="event_id" value="hide"/>
+						<flags id="event_target" value="SYPa"/>
+					</record>
+				</attachment>
+			</widget>
+		</container>
+		
+		<translation id="title" type="use" value="Support TangFu" size="12" />
+		
+		<attachment_group class="horizontal_arrange" horizontal_layout="-1,-3,-1,-3,-1,-3,-1,-3,-1" horizontal_offset="20"/>
+		
+		<container/>
+		
+		<container height="90">
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+			<container>
+				<attachment_group class="vertical_arrange_autosize" vertical_alignment="top,extend" vertical_offset="0" horizontal_inset="0" />					
+					<widget class="text" auto_size="vertical"  value="爆棚小组" alignment="centre" colour="white" size="9"/>
+				<widget class="picture" height="50"  scale_picture="true" keep_aspect_ratio="true" file="tangfu/baopeng" image_alignment="centre"/>
+			</container>
+			<widget class="button" id="YFM2" appearance="buttons/custom/over state only/button">
+				<record id="click_event" event_id="OURL" url="http://www.playgm.cc/" />
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+			</widget>
+		</container>
+		
+		<container/>
+			
+		
+		<container height="90">
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+				<container>
+					<attachment_group class="vertical_arrange_autosize" vertical_alignment="top,extend" vertical_offset="0" horizontal_inset="0" />					
+					<widget class="text" auto_size="vertical"  value="唐夫的B站视频" alignment="centre" colour="white" size="9"/>
+					<widget class="picture" height="50"  scale_picture="true" keep_aspect_ratio="true" file="tangfu/bilibili" image_alignment="centre"/>
+				</container>
+				
+				<widget class="button" id="YFMD" appearance="buttons/custom/over state only/button">
+					<record id="click_event" event_id="OURL" url="https://space.bilibili.com/49809207" />
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+				</widget>
+			</container>
+					
+		<container/>
+		
+		<container height="90">
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+				<container>
+					<attachment_group class="vertical_arrange_autosize" vertical_alignment="top,extend" vertical_offset="0" horizontal_inset="0" />					
+					<widget class="text" auto_size="vertical"  value="QQ群:602180847" alignment="centre" colour="white" size="9"/>
+					<widget class="picture" height="50"  scale_picture="true" keep_aspect_ratio="true" file="tangfu/kunshan" image_alignment="centre"/>
+				</container>
+				
+				<widget class="button" id="YFMD" appearance="buttons/custom/over state only/button">
+					<record id="click_event" event_id="OURL" url="https://afdian.net/@tangfu" />
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+				</widget>
+			</container>
+					
+		<container/>
+		
+		
+		
+		
+		<container height="90">
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+				<container>
+					<attachment_group class="vertical_arrange_autosize" vertical_alignment="top,extend" vertical_offset="0" horizontal_inset="0" />		
+				<widget class="text" auto_size="vertical" value="微信/支付宝扫码打赏爱发电"  alignment="centre" colour="text" size="9"/>
+					<widget class="picture" height="80"  scale_picture="true" keep_aspect_ratio="true" file="tangfu/aifadian" image_alignment="centre"/>
+				</container>>
+			<widget class="button" id="YFMD" appearance="buttons/custom/over state only/button">
+					<record id="click_event" event_id="OURL" url="https://afdian.net/@tangfu" />
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+				</widget>
+		</container>
+		
+		
+		<container/>
+		
+		
+		
+		
+
+		
+	</container>
+</panel>

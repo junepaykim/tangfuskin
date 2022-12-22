@@ -1,0 +1,149 @@
+<panel>
+
+  <boolean id="save_session_state" value="true" />
+
+  <!-- Styles -->
+  <flags id="frap" value="tables/custom/fixtures/friendly/row" />
+  <flags id="cncp" value="tables/custom/fixtures/continental/row" />
+  <flags id="cpap" value="tables/custom/fixtures/cup/row" />
+
+  <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+  <container id="fpc1">
+    <layout class="arrange_horizontal_attachment" alignment="right, extend" offset="0" />
+    <layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+    <!-- main area -->
+    <container class="subsection_box" id="plti" alignment="left">
+      <layout class="arrange_vertical_attachment" layout="-1,30" offset="5" />
+      <layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" />
+
+      <!-- buttons area -->
+      <container embed_in_frame="true">
+        <layout class="arrange_horizontal_attachment" alignment="left" embed_in_frame="true" offset="0" gap="8" />
+        <layout class="stick_to_sides_attachment" alignment="top" inset="0" apply_to_children="true" embed_in_frame="true" />
+        <layout class="stick_to_sides_attachment" alignment="top,left" embed_in_frame="true" inset="2" />
+        <layout class="fit_children_attachment" alignment="vertical" embed_in_frame="true" offset="0"/>
+        <layout class="fit_children_attachment" alignment="horizontal,fill" embed_in_frame="true" offset="0" gap="8"/>
+
+        <widget class="view_menu_label" id="TitL" embed_in_frame="true">
+          <translation id="text" translation_id="242258" type="use" value="Fixtures" />
+        </widget>
+        <!-- view button -->
+        <widget class="view_menu_popup" id="plvi" sele="hofi" embed_in_frame="true" />
+      </container>
+
+      <!-- buttons area -->
+      <container id="btna" embed_in_frame="true">
+
+        <layout class="arrange_horizontal_attachment" alignment="right" embed_in_frame="true" gap="5" offset="0" />
+        <layout class="stick_to_sides_attachment" alignment="top" inset="0" apply_to_children="true" embed_in_frame="true" />
+        <layout class="stick_to_sides_attachment" alignment="top,right" embed_in_frame="true" inset="2" />
+
+        <layout class="fit_children_attachment" alignment="vertical" embed_in_frame="true" offset="0"/>
+        <layout class="fit_children_attachment" alignment="horizontal,fill" embed_in_frame="true" gap="5" offset="0"/>
+        <!-- seasons popup -->
+        <widget class="embedded_season_selection_list" id="fxyr" auto_size="horizontal" sele="fxcy" height="30" embed_in_frame="true" save_immediate_state="true"/>
+
+        <!-- filter menu -->
+        <widget class="embedded_filter_button" id="plsf" target="plti" auto_size="horizontal" embed_in_frame="true"/>
+
+      </container>
+
+      <widget class="client_object_list_table" id="pltb" database_table_type="53" select_event="self" fixed_size_rows="true" auto_size_rows="false" mode="fill_rows, stripe_rows, printable, store_sort_state, show_bullets, select_rows, select_multiple, dont_allow_empty_selection, keyboard" column_mode="resize_columns, move_columns, custom_views" >
+        <boolean id="save_session_state" value="true" />
+        <boolean id="dont_restore_selection" value="true" />
+        <list id="save_default_state">
+          <integer value="crvi" />
+        </list>
+
+        <!--properties for each object we always want to request, regardless of whether or not they're displayed 
+							 (this can help when for example supplying a selected object to another panel to display further info)-->
+        <!--these can be omitted, they're just a time saver-->
+        <list id="Spid">
+          <integer value="home" />
+          <integer value="away" />
+          <integer value="FxTy" />
+          <integer value="FxCt" />
+        </list>
+
+        <!-- default sort -->
+        <list id="default_sort_column">
+          <integer value="fxdt" />
+        </list>
+
+        <!--default view from the view list-->
+        <flags id="default_view" value="hefc" />
+
+       <!--list of all available views-->
+        <list id="viws">
+					<record id="heff">
+						<translation id="text" value="Fixtures View"/>
+						<record id="view">
+							<string id="fxdt" value=""/>
+							<string id="fxMn" value=""/>
+							<string id="FXTm" value=""/>
+							<string id="fopt" value=""/>
+							<string id="FxTV" value=""/>
+							<string id="FxVn" value=""/>
+							<string id="FxRT" value=""/>
+							<record id="FxRs"/>
+							<string id="FxNm" value=""/>
+                <flags id="FxCG" />
+						</record>
+					</record>
+					<record id="gene">
+						<translation id="text" value="Fixtures" translation_id="242258" type="use"/>
+						<record id="view">
+							<string id="fxdt" value=""/>
+							<string id="fxMn" value=""/>
+							<string id="FXTm" value=""/>
+							<string id="fopt" value=""/>
+							<string id="FxTV" value=""/>
+							<string id="FxVn" value=""/>
+							<string id="FxRT" value=""/>
+							<record id="FxRs"/>
+							<string id="FxNm" value=""/>
+						</record>
+					</record>
+            <record id="goal">
+              <translation id="text" translation_id="247377" type="use" value="Goalscorers" />
+              <record id="view">
+                <flags id="fxdt" />
+                <flags id="FXTm" />
+                <flags id="fopt" />
+                <flags id="FxTV" />
+                <flags id="FxVn" />
+                <flags id="FxRs" />
+                <flags id="FxCG" />
+                <flags id="FxNm" />
+              </record>
+              <record id="table_properties">
+                <integer id="sort" value="fxdt" />
+              </record>
+            </record>
+
+          </list>
+
+        </widget>
+
+      <container height="30">
+        <layout class="arrange_horizontal_attachment" alignment="right" gap="5" />
+        <layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0"/>
+
+        <!--arrange friendly button-->
+        <widget class="icon_button" id="arrf" clke="arrf" auto_size="horizontal">
+          <translation id="hint" translation_id="247249" type="use" value="Click to arrange a friendly match" />
+          <translation id="text" translation_id="242435" type="use" value="Arrange Friendly" />
+        </widget>
+
+      </container>
+
+    </container>
+
+    <widget class="fixture_details_panel" id="Deta" width="300" />
+  </container>
+
+  <widget class="arrange_friendly_panel" id="arfp" hidden="true" />
+
+</panel>

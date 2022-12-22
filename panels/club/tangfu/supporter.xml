@@ -1,0 +1,12 @@
+<panel>
+<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="6" horizontal_inset="0" />
+	<container>
+		<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="-5, 16, -2" vertical_inset="0" horizontal_offset="0" />
+
+		<container class="supporter_percentage_panel" id="spcp" pitch_inset="36,36,40,36" />
+
+		<widget class="vertical_divider" width="2" height="236" image_alignment="centre_x" />
+
+		<container class="supporter_stats_panel" id="sstp" />
+	</container>
+</panel>

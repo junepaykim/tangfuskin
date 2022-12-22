@@ -1,0 +1,86 @@
+﻿<panel>
+    <attachment_group class="vertical_arrange" vertical_alignment="top" vertical_offset="0"/>
+
+    <boolean id="should_force_refresh" value="true"/>
+    <integer id="type" value="4"/>
+
+    <container>
+        <attachment_group class="vertical_arrange" vertical_layout="-1,100" vertical_offset="0" vertical_gap="4"/>
+        <layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
+
+        <container>
+            <attachment_group class="vertical_arrange" vertical_alignment="bottom, fill" vertical_offset="0"/>
+            
+            <!-- journos -->
+            <container>
+                <attachment_group class="vertical_arrange_horizontal_centre" vertical_alignment="middle" vertical_gap="8"/>
+
+                <container>
+                 <attachment_group class="horizontal_arrange_autosize_all" horizontal_alignment="middle"/>
+                <widget class="interaction_person_info_panel" id="SJrn" interaction_person_type="journo" width="300"/>
+                <container width="190"/>
+                </container>
+                <container class="interaction_speech_bubble_panel" id="queb" width="420"/>
+            </container>
+
+            <container height="250">
+                <attachment_group class="vertical_arrange" vertical_alignment="top, extend" horizontal_inset="20"/>
+
+                <!-- main response box -->
+                <container class="main_transparent_box" id="mnrs" red_replacement="bg">
+                    <attachment_group class="vertical_arrange" vertical_alignment="top, extend"/>
+
+                    <!-- gestures -->
+                    <container class="interaction_gesture_selector_panel" id="gest" hidden="true"/>
+
+                    <!-- human responses -->
+                    <container class="scrolling_box">
+                        <container class="interaction_grouped_response_selector_panel" id="resp"/>
+                    </container>
+                </container>
+            </container>
+        </container>
+
+        <container background_colour="bg">
+            <attachment_group class="horizontal_arrange_vertical_centre" horizontal_alignment="middle"/>
+
+            <container height="40">
+                <attachment_group class="horizontal_arrange_autosize" horizontal_alignment="left" vertical_alignment="vertical"/>
+                <layout class="stick_to_sides_attachment" alignment="left" inset="8"/>
+
+                <!-- no comment -->
+                <widget class="subtle_button" id="ncbu" click_event="noco" auto_size="all">
+                    <translation id="text" translation_id="284304" type="use" value="No Comment[Press Conference; don't want to give an answer]"/>
+                </widget>
+            </container>
+
+            <!-- human description -->
+            <widget class="interaction_person_info_panel" id="humd" interaction_person_type="human" width="200" talk="true" height="40">
+                <layout class="centre_in_parent_attachment" alignment="horizontal"/>
+            </widget>
+
+            <container height="40">
+                <attachment_group class="horizontal_arrange_autosize" horizontal_alignment="right" vertical_alignment="vertical"/>
+                <layout class="stick_to_sides_attachment" alignment="right" inset="8"/>
+
+                <!-- send assistant/decline -->
+                <widget class="subtle_button" id="sast" click_event="send" auto_size="horizontal"/>
+
+                <widget class="subtle_button" id="sobu" click_event="stor" auto_size="horizontal">
+                    <translation id="text" translation_id="284305" type="use" value="Storm Out[Press Conference; angrily leave conference early]"/>
+                    <layout class="stick_to_sides_attachment" alignment="right" inset="8"/>
+                </widget>
+           </container>
+        </container>
+    </container>
+
+    <!-- featured object profile -->
+    <container>
+        <layout class="stick_to_sides_attachment" alignment="all" inset="8"/>
+
+        <container class="interaction_featured_object_container" id="FObP" width="220">
+            <layout class="stick_to_sides_attachment" alignment="right, top" inset="0"/>
+        </container>
+    </container>
+
+</panel>

@@ -1,0 +1,247 @@
+<panel>
+	
+		 
+		
+        <layout class="arrange_vertical_attachment" alignment="top, extend" offset="0"/>
+        <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+       
+
+        <!-- Additional attributes table -->
+        <container class="client_object_viewer_xml_panel" id="attT2">
+          <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+          
+          <widget class="table" layout="-1, 48" mode="fill_rows, stripe_rows, printable" row_height="18" row_spacing="0">
+			<record id="object_property" get_property="objt" set_property="objt" />           
+          	
+            <list id="column_display_properties">
+              <record index="0" left="8" top="3" sort_disabled="true"/>
+              <record index="1" right="8" sort_disabled="true"/>
+            </list>            
+            
+        
+
+           <widget class="label" row="0" column="0" alignment="left, top, can_scale" colour="ycwz1" >
+                <record id="object_property" get_property="Ncra" name="true"/>
+            </widget>
+            <widget class="editable_client_object_property_panel" id="Ncra" row="0" column="1" alignment="right, centre_y, can_scale" style="semi_bold" colour="ycwz1">
+              <record id="object_property" get_property="Ncra"/>
+            </widget>
+            
+            <widget class="label" row="1" column="0" alignment="left, top, can_scale" colour="ycwz1" >
+              <record id="object_property" get_property="NRCA" name="true"/>
+            </widget>
+            <widget class="editable_client_object_property_panel" id="NRCA" row="1" column="1" alignment="right, centre_y, can_scale" style="semi_bold" colour="ycwz1">
+              <record id="object_property" get_property="NRCA"/>
+            </widget>
+			
+			   <widget class="label" row="2" column="0" alignment="left, top, can_scale" >
+             <record id="object_property" name="true" get_property="Npta"/>
+        </widget>
+        <widget class="editable_client_object_property_panel" id="Npta" row="2" column="1" alignment="right, centre_y, can_scale" style="semi_bold">
+             <record id="object_property" get_property="Npta"/>
+        </widget>
+            
+            <widget class="label" row="3" column="0" alignment="left, top, can_scale" >
+              <record id="object_property" get_property="Ncrr" name="true"/>
+            </widget>
+            <widget class="editable_client_object_property_panel" id="Ncrr" row="3" column="1" alignment="right, centre_y, can_scale" style="semi_bold">
+            	<record id="widget_info">
+                    <symbol id="class" value="attribute_label" />
+                 </record>
+                 <record id="object_property">
+                    <integer id="get_property" value="Ncrr" />
+                  </record>
+            </widget>
+            
+            <widget class="label" row="4" column="0" alignment="left, top, can_scale" >
+              <record id="object_property" get_property="Nhat" name="true"/>
+            </widget>
+            <widget class="editable_client_object_property_panel" id="Nhat" row="4" column="1" alignment="right, centre_y, can_scale" style="semi_bold">
+            	<record id="widget_info">
+                    <symbol id="class" value="attribute_label" />
+                 </record>
+                 <record id="object_property">
+                    <integer id="get_property" value="Nhat" />
+                  </record>
+            </widget>
+            
+            <widget class="label" row="5" column="0" alignment="left, top, can_scale" >
+              <record id="object_property" get_property="Pamb" name="true"/>
+            </widget>
+            <widget class="editable_client_object_property_panel" id="Pamb" row="5" column="1" alignment="right, centre_y, can_scale" style="semi_bold">
+            	<record id="widget_info">
+                    <symbol id="class" value="attribute_label" />
+                 </record>
+                 <record id="object_property">
+                    <integer id="get_property" value="Pamb" />
+                  </record>
+            </widget>
+            
+            <widget class="label" row="6" column="0" alignment="left, top, can_scale" >
+              <record id="object_property" get_property="Ppro" name="true"/>
+            </widget>
+            <widget class="editable_client_object_property_panel" id="Ppro" row="6" column="1" alignment="right, centre_y, can_scale" style="semi_bold">
+            	<record id="widget_info">
+                    <symbol id="class" value="attribute_label" />
+                 </record>
+                 <record id="object_property">
+                    <integer id="get_property" value="Ppro" />
+                  </record>
+            </widget>
+            
+            <widget class="label" row="7" column="0" alignment="left, top, can_scale" >
+              <record id="object_property" get_property="Nmig" name="true"/>
+            </widget>
+            <widget class="editable_client_object_property_panel" id="Nmig" row="7" column="1" alignment="right, centre_y, can_scale" style="semi_bold">
+            	<record id="widget_info">
+                    <symbol id="class" value="attribute_label" />
+                 </record>
+                 <record id="object_property">
+                    <integer id="get_property" value="Nmig" />
+                  </record>
+            </widget>
+            
+            <widget class="label" row="8" column="0" alignment="left, top, can_scale" >
+              <record id="object_property" get_property="Pcvy" name="true"/>
+            </widget>
+            <widget class="editable_client_object_property_panel" id="Pcvy" row="8" column="1" alignment="right, centre_y, can_scale" style="semi_bold">
+            	<record id="widget_info">
+                    <symbol id="class" value="attribute_label" />
+                 </record>
+                 <record id="object_property">
+                    <integer id="get_property" value="Pcvy" />
+                  </record>
+            </widget>
+            
+            <widget class="label" row="9" column="0" alignment="left, top, can_scale" >
+              <record id="object_property" get_property="Npat" name="true"/>
+            </widget>
+            <widget class="editable_client_object_property_panel" id="Npat" row="9" column="1" alignment="right, centre_y, can_scale" style="semi_bold">
+            	<record id="widget_info">
+                    <symbol id="class" value="attribute_label" />
+                 </record>
+                 <record id="object_property">
+                    <integer id="get_property" value="Npat" />
+                  </record>
+            </widget>
+            
+            <widget class="label" row="10" column="0" alignment="left, top, can_scale" >
+              <record id="object_property" get_property="Ploy" name="true"/>
+            </widget>
+            <widget class="editable_client_object_property_panel" id="Ploy" row="10" column="1" alignment="right, centre_y, can_scale" style="semi_bold">
+            	<record id="widget_info">
+                    <symbol id="class" value="attribute_label" />
+                 </record>
+                 <record id="object_property">
+                    <integer id="get_property" value="Ploy" />
+                  </record>
+            </widget>
+            
+            <widget class="label" row="11" column="0" alignment="left, top, can_scale" >
+              <record id="object_property" get_property="Nbus" name="true"/>
+            </widget>
+            <widget class="editable_client_object_property_panel" id="Nbus" row="11" column="1" alignment="right, centre_y, can_scale" style="semi_bold">
+            	<record id="widget_info">
+                    <symbol id="class" value="attribute_label" />
+                 </record>
+                 <record id="object_property">
+                    <integer id="get_property" value="Nbus" />
+                  </record>
+            </widget>
+            
+            <widget class="label" row="12" column="0" alignment="left, top, can_scale" >
+              <record id="object_property" get_property="Nres" name="true"/>
+            </widget>
+            <widget class="editable_client_object_property_panel" id="Nres" row="12" column="1" alignment="right, centre_y, can_scale" style="semi_bold">
+            	<record id="widget_info">
+                    <symbol id="class" value="attribute_label" />
+                 </record>
+                 <record id="object_property">
+                    <integer id="get_property" value="Nres" />
+                  </record>
+            </widget>
+            
+             <widget class="label" row="13" column="0" alignment="left, top, can_scale" >
+              <record id="object_property" get_property="Nbpl" name="true"/>
+            </widget>
+            <widget class="editable_client_object_property_panel" id="Nbpl" row="13" column="1" alignment="right, centre_y, can_scale" style="semi_bold">
+            	<record id="widget_info">
+                    <symbol id="class" value="attribute_label" />
+                 </record>
+                 <record id="object_property">
+                    <integer id="get_property" value="Nbpl" />
+                  </record>
+            </widget>
+            
+            <widget class="label" row="14" column="0" alignment="left, top, can_scale" >
+              <record id="object_property" get_property="Nflx" name="true"/>
+            </widget>
+            <widget class="editable_client_object_property_panel" id="Nflx" row="14" column="1" alignment="right, centre_y, can_scale" style="semi_bold">
+            	<record id="widget_info">
+                    <symbol id="class" value="attribute_label" />
+                 </record>
+                 <record id="object_property">
+                    <integer id="get_property" value="Nflx" />
+                  </record>
+            </widget>
+            
+            <widget class="label" row="15" column="0" alignment="left, top, can_scale" >
+              <record id="object_property" get_property="Natt" name="true"/>
+            </widget>
+            <widget class="editable_client_object_property_panel" id="Natt" row="15" column="1" alignment="right, centre_y, can_scale" style="semi_bold">
+            	<record id="widget_info">
+                    <symbol id="class" value="attribute_label" />
+                 </record>
+                 <record id="object_property">
+                    <integer id="get_property" value="Natt" />
+                  </record>
+            </widget>
+            
+			<widget class="label" row="16" column="0" alignment="left, top, can_scale" >
+              <record id="object_property" get_property="Ndep" name="true"/>
+            </widget>
+            <widget class="editable_client_object_property_panel" id="Ndep" row="16" column="1" alignment="right, centre_y, can_scale" style="semi_bold">
+            	<record id="widget_info">
+                    <symbol id="class" value="attribute_label" />
+                 </record>
+                 <record id="object_property">
+                    <integer id="get_property" value="Ndep" />
+                  </record>
+            </widget>
+
+
+			<widget class="label" row="17" column="0" alignment="left, top, can_scale" >
+              <record id="object_property" get_property="Npre" name="true"/>
+            </widget>
+            <widget class="editable_client_object_property_panel" id="Npre" row="17" column="1" alignment="right, centre_y, can_scale" style="semi_bold">
+            	<record id="widget_info">
+                    <symbol id="class" value="attribute_label" />
+                 </record>
+                 <record id="object_property">
+                    <integer id="get_property" value="Npre" />
+                  </record>
+            </widget>
+
+             <widget class="label" row="18" column="0" alignment="left, top, can_scale" >
+              <record id="object_property" get_property="Nsib" name="true"/>
+            </widget>
+            <widget class="editable_client_object_property_panel" id="Nsib" row="18" column="1" alignment="right, centre_y, can_scale" style="semi_bold">
+            	<record id="widget_info">
+                    <symbol id="class" value="attribute_label" />
+                 </record>
+                 <record id="object_property">
+                    <integer id="get_property" value="Nsib" />
+                  </record>
+            </widget>          
+           </widget>        
+           
+           
+        </container>     
+        
+        
+
+        
+
+
+
+</panel>
